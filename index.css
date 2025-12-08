@@ -21,6 +21,12 @@ body {
   background: #9c6f00;
 }
 
+.address-button {
+  height: 10vh;
+  aspect-ratio: 1 / 1;
+  background: #9c6f00;
+}
+
 .content {
   display: flex;
   flex-direction: column;
