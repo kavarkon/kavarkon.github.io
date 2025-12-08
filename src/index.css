@@ -3,6 +3,24 @@ body {
   background: black;
 }
 
+.header {
+  position: fixed;
+  top: 0;
+  height: 10vh;
+  width: 100%;
+  z-index: 1;
+  background: transparent;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.navigation-button {
+  width: 10vw;
+  aspect-ratio: 1 / 1;
+  background: #9c6f00;
+}
+
 .content {
   display: flex;
   flex-direction: column;
