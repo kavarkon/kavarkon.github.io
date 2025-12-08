@@ -16,7 +16,7 @@ body {
 }
 
 .navigation-button {
-  width: 10vw;
+  height: 10vh;
   aspect-ratio: 1 / 1;
   background: #9c6f00;
 }
