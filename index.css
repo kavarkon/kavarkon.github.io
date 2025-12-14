@@ -20,16 +20,19 @@ body {
   aspect-ratio: 1 / 1;
   background: #9c6f00;
   display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  font-size: 10vh;
 }
 
 .ri-layout-horizontal-fill {
-  height: 10vh;
+  line-height: 1;
 }
 
 .address-button {
   height: 10vh;
   aspect-ratio: 1 / 1;
-  background: black;
+  background: #45a87f;
   display: flex;
 }
 
