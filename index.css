@@ -49,17 +49,26 @@ body {
   width: 100%;
   background: black;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
 .greeting__fill {
-  height: 80vh;
+  background: gray;
   display: flex;
+}
+
+.mobile {
+  height: 80%;
+  width: 90%;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
 }
 
-.greeting__fill__logo mobile {
+.greeting__fill__logo-mobile {
+  height: 100%;
   width: 100%;
 }
 
