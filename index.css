@@ -18,22 +18,25 @@ body {
 .navigation-button {
   height: 10vh;
   aspect-ratio: 1 / 1;
-  background: #9c6f00;
+  background: transparent;
   display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  font-size: 10vh;
 }
 
-.ri-layout-horizontal-fill {
-  line-height: 1;
+.navigation-button__icon {
+  width: 120%;
+  height: 130%;
 }
 
 .address-button {
   height: 10vh;
   aspect-ratio: 1 / 1;
-  background: #45a87f;
+  background: transparent;
   display: flex;
+}
+
+.address-button__icon {
+  width: 60%;
+  height: 60%;
 }
 
 .content {
@@ -41,10 +44,22 @@ body {
   flex-direction: column;
 }
 
-.intro {
+.greeting {
   height: 100vh;
   width: 100%;
-  background: #f7e6e6;
+  background: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.greeting__fill {
+  height: 80vh;
+  display: flex;
+}
+
+.greeting__fill__logo mobile {
+  
 }
 
 .about {

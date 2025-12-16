@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="16"
+   height="16"
+   fill="currentColor"
+   class="bi bi-geo-alt-fill"
+   viewBox="0 0 16 16"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="geo-alt-fill.svg"
+   inkscape:version="1.4.2 (f4327f4, 2025-05-13)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1">
+    <linearGradient
+       id="linearGradient1"
+       inkscape:collect="always">
+      <stop
+         style="stop-color:#b39b51;stop-opacity:1;"
+         offset="0"
+         id="stop1" />
+      <stop
+         style="stop-color:#e4deb7;stop-opacity:1;"
+         offset="1"
+         id="stop2" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient1"
+       id="linearGradient2"
+       x1="8.1669464"
+       y1="-0.3512665"
+       x2="8.1669464"
+       y2="21.368711"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.91462273,0,0,0.91462273,0.63910988,0.6635034)" />
+  </defs>
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="48.3125"
+     inkscape:cx="8.1034929"
+     inkscape:cy="8.2173351"
+     inkscape:window-width="1920"
+     inkscape:window-height="991"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1" />
+  <path
+     d="m 7.9560917,15.297467 c 0,0 5.4877363,-5.200545 5.4877363,-9.1462273 a 5.4877365,5.4877365 0 0 0 -10.9754727,0 c 0,3.9456823 5.4877364,9.1462273 5.4877364,9.1462273 m 0,-6.4023591 a 2.7438682,2.7438682 0 1 1 0,-5.4877363 2.7438682,2.7438682 0 0 1 0,5.4877363"
+     id="path1"
+     style="fill:url(#linearGradient2);fill-opacity:1;stroke-width:0.914623" />
+</svg>
