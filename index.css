@@ -67,6 +67,12 @@ body {
   justify-content: center;
 }
 
+@media (min-width: 768px) {
+  .mobile {
+    display: none;
+  }
+}
+
 .greeting__fill__logo-mobile {
   height: 100%;
   width: 100%;
