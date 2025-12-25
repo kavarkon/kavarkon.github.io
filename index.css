@@ -36,6 +36,12 @@ p {
   justify-content: space-between;
 }
 
+@media (min-width: 768px) {
+  .header {
+    height: 60px;
+  }
+}
+
 .navigation-button {
   height: 100%;
   background: transparent;
@@ -74,7 +80,7 @@ p {
   isolation: isolate;
 }
 
-.greeting__decor-mobile {
+.greeting__decor_mobile {
   width: 100%;
   right:0;
   top: 10%;
@@ -90,7 +96,7 @@ p {
 }
 
 
-.greeting__fill-mobile {
+.greeting__fill_mobile {
   height: calc(100% - 90px);
   width: calc(100% - 40px);
   margin: 20px;
@@ -107,10 +113,10 @@ p {
 
 
 @media (min-width: 768px) {
-  .greeting__fill-mobile {
+  .greeting__fill_mobile {
     display: none;
   }
-  .greeting__decor-mobile {
+  .greeting__decor_mobile {
     display: none;
   }
 }
@@ -120,7 +126,7 @@ p {
 }
 
 .working-hours {
-  margin: 30px;
+  margin: 24px;
   background: transparent;
   color: white;
   font-size: 20px;
@@ -137,7 +143,7 @@ p {
   isolation: isolate;
 }
 
-.about__decor {
+.about__decor_mobile {
   position: absolute;
   inset: 0;
   z-index: 1;
@@ -205,6 +211,8 @@ p {
   justify-content: center;
 }
 
+
+
 .reservation-button {
   height: 100%;
   border-radius: 20px;
@@ -215,8 +223,22 @@ p {
 }
 
 .reservation-button__text {
-  font-size: 12px;
+  font-size: 10px;
   font-weight: 700;
   color: black;
   margin: 20px;
+}
+
+@media (min-width: 768px) {
+  .footer {
+    height: 60px;
+  }
+  .reservation-button {
+    border-radius: 40px;
+  }
+
+  .reservation-button__text {
+    font-size: 20px;
+    margin: 40px;
+  }
 }
