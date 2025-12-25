@@ -76,14 +76,16 @@ p {
 
 .greeting__decor-mobile {
   width: 100%;
-  bottom: 1%;
+  right:0;
+  top: 10%;
+  /* bottom: 1%; */
   position: absolute;
   z-index: 0;
   pointer-events: none;
   display: flex;
 }
 
-.cheers-img {
+.hand-img {
   width: 100%;
 }
 
