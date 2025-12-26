@@ -9,11 +9,20 @@
 </head>
 <body>
   <div class="header">
-    <div class="address-button">
-      <img class="address-button__icon" src="icons/strelka.svg">
+    <div class="address-button js-toggle">
+      <img 
+        class="address-button__icon"
+        src="icons/strelka.svg"
+        data-default="icons/strelka.svg"
+        data-active="icons/x.svg"
+        alt="">
     </div>
-    <div class="navigation-button">
-      <img class="navigation-button__icon" src="icons/kvadratik.svg">
+    <div class="navigation-button js-toggle">
+      <img class="navigation-button__icon"
+        src="icons/kvadratik.svg"
+        data-default="icons/kvadratik.svg"
+        data-active="icons/x.svg"
+        alt="">
     </div>
   </div>
 
@@ -55,4 +64,5 @@
           <p class="reservation-button__text">ЗАБРОНИРОВАТЬ СТОЛ</p>
     </div>
   </div>
+  <script src="main.js"></script>
 </body>
