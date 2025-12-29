@@ -30,11 +30,10 @@ p {
 
 .header {
   position: fixed;
-  top: 0;
+  top: 20px;
   height: 32px;
   width: 100%;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  /* padding: 20px; */
   z-index: 100;
   background: transparent;
   display: flex;
@@ -44,8 +43,8 @@ p {
 
 @media (min-width: 768px) {
   .header {
-    width: calc(100vw - 80px);
-    margin: 60px;
+    width: 100%;
+    /* margin: 60px; */
     height: 40px;
   }
 }
@@ -53,11 +52,19 @@ p {
 .address-button,
 .navigation-button {
   height: 100%;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin: 20px;
   background: transparent;
   display: flex;
   cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .address-button,
+  .navigation-button  {
+    height: 100%;
+    margin: 40px;
+
+  }
 }
 
 .address-button__icon,
