@@ -1,33 +1,54 @@
 document.addEventListener('DOMContentLoaded', () => {
   const buttons = document.querySelectorAll('.js-toggle');
 
-  function resetButtons(except = null) {
+  const addressButton = document.querySelector('.js-address-button');
+  const navigationButton = document.querySelector('.js-navigation-button');
+
+  const addressPanel = document.querySelector('.js-address-panel');
+  const navigationMenu = document.querySelector('.js-navigation-menu');
+
+  function setIcon(button, isActive) {
+    const icon = button.querySelector('img');
+    icon.src = isActive ? icon.dataset.active : icon.dataset.default;
+  }
+
+  function closeAll(exceptButton = null) {
+    // выключаем кнопки (кроме exceptButton)
     buttons.forEach(button => {
-      if (button !== except && button.classList.contains('_active')) {
-        const icon = button.querySelector('img');
+      if (button !== exceptButton && button.classList.contains('_active')) {
         button.classList.remove('_active');
-        icon.src = icon.dataset.default;
+        setIcon(button, false);
       }
     });
+
+    // скрываем панели
+    addressPanel.classList.remove('_active');
+    navigationMenu.classList.remove('_active');
   }
 
   document.addEventListener('click', (e) => {
     const button = e.target.closest('.js-toggle');
 
-    // Клик вне кнопок
+    // клик вне кнопок
     if (!button) {
-      resetButtons();
+      closeAll();
       return;
     }
 
-    // Клик по кнопке
-    const icon = button.querySelector('img');
+    // переключаем текущую кнопку
     const isActive = button.classList.toggle('_active');
+    setIcon(button, isActive);
 
-    resetButtons(button);
+    // закрываем всё остальное
+    closeAll(button);
 
-    icon.src = isActive
-      ? icon.dataset.active
-      : icon.dataset.default;
+    // показываем нужный блок, если кнопка активна
+    if (button === addressButton && isActive) {
+      addressPanel.classList.add('_active');
+    }
+
+    if (button === navigationButton && isActive) {
+      navigationMenu.classList.add('_active');
+    }
   });
 });
