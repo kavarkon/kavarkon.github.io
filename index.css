@@ -17,6 +17,10 @@
 body {
   margin: 0;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
   /* background: black; */
 }
 
@@ -28,8 +32,9 @@ p {
   position: fixed;
   top: 0;
   height: 32px;
-  width: calc(100vw - 30px);
-  margin: 20px;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
   z-index: 100;
   background: transparent;
   display: flex;
@@ -40,7 +45,7 @@ p {
 @media (min-width: 768px) {
   .header {
     width: calc(100vw - 80px);
-    margin: 40px;
+    margin: 60px;
     height: 40px;
   }
 }
@@ -48,6 +53,8 @@ p {
 .address-button,
 .navigation-button {
   height: 100%;
+  margin-left: 20px;
+  margin-right: 20px;
   background: transparent;
   display: flex;
   cursor: pointer;
