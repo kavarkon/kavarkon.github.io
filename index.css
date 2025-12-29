@@ -28,7 +28,7 @@ p {
   position: fixed;
   top: 0;
   height: 32px;
-  width: calc(100vw - 40px);
+  width: calc(100vw - 30px);
   margin: 20px;
   z-index: 100;
   background: transparent;
