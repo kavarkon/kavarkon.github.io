@@ -30,10 +30,7 @@ p {
 .header {
   position: fixed;
   width: calc(100% - 40px);
-  /* width: 100%; */
   padding: 20px;
-  /* margin-left: 20px; */
-  /* margin-right: 20px; */
   z-index: 100;
   background: transparent;
   display: flex;
@@ -51,6 +48,7 @@ p {
 .address-button,
 .navigation-button {
   height: 32px;
+  width: 32px;
   background: transparent;
   display: flex;
   cursor: pointer;
@@ -60,6 +58,7 @@ p {
   .address-button,
   .navigation-button  {
     height: 40px;
+    width: 40px;
   }
 }
 
