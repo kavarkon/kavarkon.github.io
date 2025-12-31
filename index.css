@@ -293,26 +293,25 @@ p {
 
 .point-three_mobile {
   text-align: center;
-  font-size: 30px;
+  font-size: 3vh;
   color: white;
 }
 
-.all-events_mobile {
-  display: flex;
-  flex-direction: row-reverse;
-}
-
 .all-events__button_mobile {
-  font-size: 14px;
-  padding: 10px 15px;
+  /* width: 100vw; */
+  text-align: center;
+  /* display: flex; */
+  /* flex-direction: row-reverse; */
+  font-size: 2vh;
+  padding: 2vh ;
   /* margin-bottom: 42%; */
   /* margin: 5%; */
   /* text-align: left; */
   /* background: black; */
   background-color: rgba(0, 0, 0, 0.7);
   color: white;
-  border-radius: 30px;
-  border-style: solid;
+  /* border-radius: 30px; */
+  border-style: solid none;
   border-width: 1px;
   border-color: #feeb7a;
 }
