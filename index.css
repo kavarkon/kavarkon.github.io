@@ -146,7 +146,7 @@ p {
 
 
 .greeting__fill_mobile {
-  height: calc(100% - 90px);
+  height: calc(87%);
   width: calc(100% - 40px);
   margin: 20px;
   flex-direction: column;
