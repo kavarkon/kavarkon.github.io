@@ -130,10 +130,9 @@ p {
   isolation: isolate;
 }
 
-.greeting__decor_mobile {
+.greeting__decor_mobile,
+.about__decor_mobile {
   width: 100%;
-  right:0;
-  top: 10%;
   position: absolute;
   z-index: 0;
   pointer-events: none;
@@ -190,15 +189,6 @@ p {
   background: black;
   position: relative;
   isolation: isolate;
-}
-
-.about__decor_mobile {
-  width: 100%;
-  position: absolute;
-  z-index: 0;
-  pointer-events: none;
-  display: flex;
-  flex-direction: column;
 }
 
 .image-lamp_mobile {
