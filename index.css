@@ -85,14 +85,11 @@ p {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: black;
+  /* background: black; */
+background-color: rgba(0, 0, 0, 0.8);
   color: white;
   font-size: 16px;
 }
-
-/* .navigation-menu._active { */
-/*   font-weight: 700; */
-/* } */
 
 @media (min-width: 768px) {
   .address-panel._active,
@@ -109,8 +106,12 @@ p {
 .navigation-menu__contacts {
   margin: 5px;
   padding: 15px 20px;
-  background: #1f1c0f;
+  /* background: black; */
+background-color: rgba(0, 0, 0, 0.4);
   border-radius: 30px;
+  border-color: #feeb7a;
+  border-style: solid;
+  border-width: 1px;
 }
 
 .content {
@@ -231,7 +232,7 @@ p {
 }
 
 .point-two_mobile {
-  margin: 0;
+  /* margin: 0; */
   text-align: center;
   color: white;
   font-size: 14px;
@@ -308,7 +309,6 @@ p {
   }
 }
 
-
 .menu {
   height: 100vh;
   width: 100vw;
@@ -333,7 +333,6 @@ p {
   background: #f7e6e6;
 }
 
-
 .footer {
   position: fixed;
   bottom: 0;
@@ -346,8 +345,6 @@ p {
   align-items: center;
   justify-content: center;
 }
-
-
 
 .reservation-button {
   height: 100%;
