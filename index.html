@@ -1,114 +1,109 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="icons/remixicon.css">
-  <title>Сайт бара</title>
-</head>
-<body>
-  <div class="header">
-    <div class="address-button js-toggle js-address-button">
-      <img 
-        class="address-button__icon"
-        src="icons/strelka.svg"
-        data-default="icons/strelka.svg"
-        data-active="icons/x.svg"
-        alt="">
-    </div>
-    <div class="navigation-button js-toggle js-navigation-button">
-      <img class="navigation-button__icon"
-        src="icons/kvadratik.svg"
-        data-default="icons/kvadratik.svg"
-        data-active="icons/x.svg"
-        alt="">
-    </div>
-  </div>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="index.css">
+		<link rel="stylesheet" href="icons/remixicon.css">
+		<title>Сайт бара</title>
+	</head>
+	<body>
 
-  <div class="address-panel js-address-panel">
-    <p>Нижний Сусальный переулок, дом 5, стр. 4а</p>
-  </div>
-  <div class="navigation-menu js-navigation-menu">
-    <div class="navigation-menu__about" href="#about">
-      <p>О НАС</p>
-    </div>
-    <div class="navigation-menu__events" href="#events">
-      <p>МЕРОПРИЯТИЯ</p>
-    </div>
-    <div class="navigation-menu__menu" href="#menu">
-      <p>МЕНЮ КУХНИ</p>
-    </div>
-    <div class="navigation-menu__alcohol-menu" href="#alcohol-menu">
-      <p>МЕНЮ БАРА</p>
-    </div>
-    <div class="navigation-menu__banquet" href="#banquet">
-      <p>БАНКЕТ</p>
-    </div>
-    <div class="navigation-menu__contacts" href="#contacts">
-      <p>КОНТАКТЫ</p>
-    </div>
-  </div>
+		<div class="main-buttons-wrapper">
 
+			<div class="header">
+				<div class="address-button js-toggle js-address-button">
+					<img class="address-button__icon" src="icons/strelka.svg" data-default="icons/strelka.svg" data-active="icons/x.svg" alt="">
+				</div>
+				<div class="navigation-button js-toggle js-navigation-button">
+					<img class="navigation-button__icon" src="icons/kvadratik.svg" data-default="icons/kvadratik.svg" data-active="icons/x.svg" alt="">
+				</div>
+			</div>
 
-  <div class="content">
-    <div class="greeting">
-      <div class="greeting__decor_mobile">
-        <img class="hand-img" src="images/hand.png">
-      </div>
-      <div class="greeting__fill_mobile">
-        <img class="logo-mobile" src="icons/main-logo-min.svg">
-        <div class="working-hours">
-          <p>ЖДЕМ ВАС<br>
-              КАЖДЫЙ ДЕНЬ<br><br>
-              с 12:00 - до 00:00</p>
-        </div>
-      </div>
-    </div>
-    <div class="about" id="about">
-      <div class="about__decor_mobile">
-        <img class="image-lamp_mobile" src="images/lamp.png">
-        <!-- <img class="image-microphone" src="images/microphone.png" -->
-      </div>
-      <div class="about__fill_mobile">
-        <p class="point-one_mobile">TEMPLE BAR - ЭТО</p>
-        <p class="point-one-two_mobile">МЕСТО, ГДЕ ЖИВАЯ МУЗЫКА ДОПОЛНЯЕТСЯ ОТЛИЧНОЙ КУХНЕЙ И ПРАВИЛЬНЫМИ НАПИТКАМИ</p>
-        <div class="about__point-wrapper_mobile">
-          <p class="point-two_mobile">ВСЕ ЭТЕМЕНТЫ ВЕЧЕРА ПРЕДСТАВЛЕНЫ<br> В ГАРМОНИИ</p>
-          <img class="about-line_mobile" src="images/line.svg">
-        </div>
-      </div>
-    </div>
-    <div class="events" id="events">
-      <div class="events__decor_mobile">
-        <img class="image-piano" src="images/piano.png">
-      </div>
-      <div class="events__fill_mobile">
-        <p class="point-three_mobile">РЕГУЛЯРНЫЕ ЖИВИЕ ВЫСТУПЛЕНИЯ И МЕРОПРИЯТИЯ</p>
-        <div class="extract">
-          <img class="image-extract" src="images/extract.jpg">
-        </div>
-        <!-- <p class="all-events__button_mobile">ВСЕ МЕРОПРИЯТИЯ</p> -->
-      </div>
-    </div>
-    <div class="menu" id="menu">
-      <p class="point-four_mobile">ПРЕМИАЛЬНЫЕ СОЧНЫЕ СТЕЙКИ ЗЕРНОВОГО ОТКОРМА</p>
-    </div>
-    <div class="bar-menu">
-      <p class="point-five_mobile">ГОЛОВОКРУЖИТЕЛЬНЫЙ ВЫБОР ПЕННОГО</p>
-    </div>
-    <div class="banquet" id="banquet">
-      <p class="banquet_mobile">..можно организовать банкет</p>
-    </div>
-    <div class="contacts" id="contacts">
-      <p class="contacts_mobile">..пишизвони туда сюда</p>
-    </div>
-  </div>
+			<div class="address-panel js-address-panel">
+				<p>Нижний Сусальный переулок, дом 5, стр. 4а</p>
+			</div>
 
-  <div class="footer">
-    <div class="reservation-button">
-      <p class="reservation-button__text">ЗАБРОНИРОВАТЬ СТОЛ</p>
-    </div>
-  </div>
-  <script src="main.js"></script>
-</body>
+			<div class="navigation-menu js-navigation-menu">
+				<div class="navigation-menu__about">
+					<a href="#about">О НАС</a>
+				</div>
+				<div class="navigation-menu__events">
+					<a href="#events">МЕРОПРИЯТИЯ</a>
+				</div>
+				<div class="navigation-menu__menu">
+					<a href="#menu">МЕНЮ КУХНИ</a>
+				</div>
+				<div class="navigation-menu__alcohol-menu">
+					<a href="#alcohol-menu">МЕНЮ БАРА</a>
+				</div>
+				<div class="navigation-menu__banquet">
+					<a href="#banquet">БАНКЕТ</a>
+				</div>
+				<div class="navigation-menu__contacts">
+					<a href="#contacts">КОНТАКТЫ</a>
+				</div>
+			</div>
+
+			<div class="footer">
+				<a class="reservation-button">ЗАБРОНИРОВАТЬ СТОЛ</a>
+			</div>
+		</div>
+
+		<div class="content">
+			<div class="greeting">
+				<div class="greeting__decor_mobile">
+					<img class="hand-img" src="images/hand.png" alt="">
+				</div>
+				<div class="greeting__fill_mobile">
+					<img class="logo-mobile" src="icons/main-logo-min.svg" alt="logo TEMPLE BAR">
+					<p class="working-hours">ЖДЕМ ВАС<br>
+						КАЖДЫЙ ДЕНЬ<br><br>
+						с 12:00 - до 00:00</p>
+				</div>
+			</div>
+			<div class="about" id="about">
+				<div class="about__decor_mobile">
+					<img class="image-lamp_mobile" src="images/lamp.png" alt="">
+				</div>
+				<div class="about__fill_mobile">
+					<p class="point-one_mobile">TEMPLE BAR - ЭТО</p>
+					<p class="point-one-two_mobile">МЕСТО, ГДЕ ЖИВАЯ МУЗЫКА ДОПОЛНЯЕТСЯ ОТЛИЧНОЙ КУХНЕЙ И ПРАВИЛЬНЫМИ НАПИТКАМИ</p>
+					<div class="about__point-wrapper_mobile">
+						<p class="point-two_mobile">ВСЕ ЭТЕМЕНТЫ ВЕЧЕРА ПРЕДСТАВЛЕНЫ<br>
+							В ГАРМОНИИ</p>
+						<img class="about-line_mobile" src="images/line.svg" alt="">
+					</div>
+				</div>
+			</div>
+			<div class="events" id="events">
+				<div class="events__decor_mobile">
+					<img class="image-piano" src="images/piano.png" alt="">
+				</div>
+				<div class="events__fill_mobile">
+					<p class="point-three_mobile">РЕГУЛЯРНЫЕ ЖИВИЕ ВЫСТУПЛЕНИЯ И МЕРОПРИЯТИЯ</p>
+					<div class="extract">
+						<img class="image-extract" src="images/extract.jpg" alt="last events">
+						<!--   </div> -->
+						<!-- <p class="all-events__button_mobile">ВСЕ МЕРОПРИЯТИЯ</p> -->
+						<!-- </div> -->
+					</div>
+				</div>
+			</div>
+			<div class="menu" id="menu">
+				<p class="point-four_mobile">ПРЕМИАЛЬНЫЕ СОЧНЫЕ СТЕЙКИ ЗЕРНОВОГО ОТКОРМА</p>
+			</div>
+			<div class="bar-menu">
+				<p class="point-five_mobile">ГОЛОВОКРУЖИТЕЛЬНЫЙ ВЫБОР ПЕННОГО</p>
+			</div>
+			<div class="banquet" id="banquet">
+				<p class="banquet_mobile">..можно организовать банкет</p>
+			</div>
+			<div class="contacts" id="contacts">
+				<p class="contacts_mobile">..пишизвони туда сюда</p>
+			</div>
+		</div>
+
+		<script src="main.js"></script>
+	</body>
+</html>
