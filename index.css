@@ -163,10 +163,10 @@ p {
 .about__fill_mobile {
   /* height: calc(100% - 90px - 8vh); */
   /* width: calc(100% - 40px); */
-  height: 74%;
+  height: 75%;
   width: calc(100% - 40px);
   margin: 20px;
-  padding-top: 11vh;
+  padding-top: 20%;
   flex-direction: column;
   /* align-items: stretch; */
   align-items: stretch;
@@ -186,8 +186,8 @@ p {
 }
 
 .point-one-two_mobile {
-  margin: 4vw;
-  /* margin-bottom: 7vh; */
+  margin: 7%;
+  padding-bottom: 7%;
   text-align: right;
   color: white;
   font-size: 16px;
