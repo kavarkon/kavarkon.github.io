@@ -133,7 +133,7 @@ p {
 }
 
 .greeting__fill_mobile {
-  height: 74%;
+  height: 75%;
   width: calc(100% - 40px);
   margin: 20px;
   background: transparent;
