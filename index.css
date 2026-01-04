@@ -14,15 +14,32 @@
   src: url('fonts/montserrat-v31-cyrillic_cyrillic-ext_latin-700.woff2') format('woff2');
 }
 
+@font-face {
+  font-display: swap;
+  font-family: 'Pangolin';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/pangolin-v12-cyrillic_cyrillic-ext_latin-regular.woff2') format('woff2');
+}
+
+
+@font-face {
+  font-display: swap;
+  font-family: 'Amatic SC';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/amatic-sc-v28-cyrillic_latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
 body {
   position: relative;
   display: flex;
   flex-direction: column;
   margin: 0;
+  /* font-family: "Montserrat", Arial, sans-serif; */
 }
 
 p {
-  font-family: "Montserrat", Arial, sans-serif;
   margin: 0;
 }
 
@@ -206,7 +223,8 @@ p {
   font-size: 14px;
 }
 
-.events {
+.events,
+.menu {
   height: 100vh;
   width: 100vw;
   background: black;
@@ -272,10 +290,49 @@ p {
   }
 }
 
-.menu {
-  height: 100vh;
-  width: 100vw;
-  background: #400808;
+
+
+.menu_mobile__decor {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 0;
+  pointer-events: none;
+  display: flex;
+  /* flex-direction: column; */
+  /* align-items: flex-end; */
+}
+
+.image-fork {
+  height: 100%;
+  width: 80%;
+  margin-left: 20%;
+  object-fit: cover;
+}
+
+.menu__fill_mobile {
+  height: 74%;
+  width: calc(100% - 40px);
+  margin: 20px;
+  padding-top: 25%;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-between;
+  background: transparent;
+  display: flex;
+  position: absolute;
+  z-index: 1;
+}
+
+.point-four_mobile {
+  color: white;
+  font-size: 3vh;
+}
+
+.point-four2_mobile {
+  /* font-family: "Pangolin", Arial, sans-serif; */
+  font-family: "Amatic SC";
+  color: #813e28;
 }
 
 .discount {
