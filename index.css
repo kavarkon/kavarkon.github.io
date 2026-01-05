@@ -32,15 +32,17 @@
 }
 
 body {
-  position: relative;
-  display: flex;
-  flex-direction: column;
   margin: 0;
   /* font-family: "Montserrat", Arial, sans-serif; */
 }
 
 p {
   margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
 .main-buttons-wrapper {
@@ -86,25 +88,39 @@ p {
 .address-panel._active,
 .navigation-menu._active {
   width: 100%;
-  height: 70%;
+  height: 90%;
   background-color: rgba(0, 0, 0, 0.8);
   color: white;
   font-size: 16px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  /* flex-direction: column; */
+  /* align-items: center; */
+  /* justify-content: center; */
+}
+
+.address-panel._active {
+  flex-direction: row;
+  font-family: "Amatic SC", Arial, sans-serif;
+}
+
+.navgation-menu._active {
+  font-family: "Montserrat", Arial, sans-serif;
+}
+
+.address {
+  padding: 10vw;
 }
 
 .navigation-menu__about,
 .navigation-menu__events,
 .navigation-menu__menu,
-.navigation-menu__alcohol-menu,
+.navigation-menu__bar-menu,
 .navigation-menu__banquet,
+.navigation-menu__discount,
 .navigation-menu__contacts {
   margin: 5px;
   padding: 15px 20px;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.5);
   border-radius: 30px;
   border-color: #feeb7a;
   border-style: solid;
@@ -119,12 +135,14 @@ p {
 }
 
 .reservation-button {
-  padding: 15px 20px;
+  padding: 14px 20px;
   border-radius: 30px;
   background: #feeb7a;
   font-size: 10px;
   font-weight: 700;
   color: black;
+  font-family: font-family: "Montserrat", Arial, sans-serif;
+
 }
 
 .greeting,
@@ -154,6 +172,7 @@ p {
   width: calc(100% - 40px);
   margin: 20px;
   background: transparent;
+  font-family: "Montserrat", Arial, sans-serif;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -178,17 +197,15 @@ p {
 }
 
 .about__fill_mobile {
-  /* height: calc(100% - 90px - 8vh); */
-  /* width: calc(100% - 40px); */
   height: 74%;
   width: calc(100% - 40px);
   margin: 20px;
   padding-top: 25%;
   flex-direction: column;
-  /* align-items: stretch; */
   align-items: stretch;
   justify-content: space-between;
   background: transparent;
+  font-family: "Montserrat", Arial, sans-serif;
   display: flex;
   position: absolute;
   z-index: 1;
@@ -199,12 +216,13 @@ p {
   cursor: pointer;
   color: white;
   font-size: 30px;
-  /* margin-bottom: 40%; */
 }
 
 .point-one-two_mobile {
   margin: 9%;
   padding-bottom: 7%;
+  margin: 4vw;
+  /* margin-bottom: 7vh; */
   text-align: right;
   color: white;
   font-size: 16px;
@@ -217,7 +235,6 @@ p {
 }
 
 .point-two_mobile {
-  /* margin: 0; */
   text-align: center;
   color: white;
   font-size: 14px;
@@ -251,6 +268,7 @@ p {
   flex-direction: column;
   align-items: stretch;
   background: transparent;
+  font-family: "Montserrat", Arial, sans-serif;
   display: flex;
   position: absolute;
   z-index: 1;
@@ -290,8 +308,6 @@ p {
   }
 }
 
-
-
 .menu_mobile__decor {
   height: 100%;
   width: 100%;
@@ -327,21 +343,34 @@ p {
 .point-four_mobile {
   color: white;
   font-size: 3vh;
+  font-family: "Montserrat", Arial, sans-serif;
 }
 
 .point-four2_mobile {
   /* font-family: "Pangolin", Arial, sans-serif; */
-  font-family: "Amatic SC";
+  /* font-family: "Amatic SC"; */
   color: #813e28;
 }
 
-.discount {
+.menu {
+  height: 100vh;
+  width: 100vw;
+  background: black;
+}
+
+.bar-menu {
+  height: 100vh;
+  width: 100vw;
+  background: #45a87f;
+}
+
+.banquet {
   height: 100vh;
   width: 100vw;
   background: pink;
 }
 
-.banquet {
+.discount {
   height: 100vh;
   width: 100vw;
   background: #45a87f;
