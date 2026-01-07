@@ -19,7 +19,7 @@
   font-family: 'Pangolin';
   font-style: normal;
   font-weight: 400;
-  src: url('../fonts/pangolin-v12-cyrillic_cyrillic-ext_latin-regular.woff2') format('woff2');
+  src: url('fonts/pangolin-v12-cyrillic_cyrillic-ext_latin-regular.woff2') format('woff2');
 }
 
 
@@ -28,7 +28,7 @@
   font-family: 'Amatic SC';
   font-style: normal;
   font-weight: 400;
-  src: url('../fonts/amatic-sc-v28-cyrillic_latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('fonts/amatic-sc-v28-cyrillic_latin-regular.woff2') format('woff2');
 }
 
 body {
@@ -88,24 +88,26 @@ a {
 
 .address-panel._active,
 .navigation-menu._active {
-  width: 100%;
+  width: 80%;
   height: 90%;
-  background-color: rgba(0, 0, 0, 0.8);
+  padding: 10% 10%;
+  background-color: rgba(0, 0, 0, 0.9);
   color: white;
-  font-size: 16px;
+  /* font-size: 16px; */
   display: flex;
-  /* flex-direction: column; */
-  /* align-items: center; */
-  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .address-panel._active {
-  flex-direction: row;
-  font-family: "Amatic SC", Arial, sans-serif;
+  text-align: center;
+  font-size: 10vw;
+  font-family: 'Amatic SC', Arial, sans-serif;
 }
 
 .navgation-menu._active {
-  font-family: "Montserrat", Arial, sans-serif;
+  font-family: 'Montserrat', Arial, sans-serif;
 }
 
 .address {
@@ -119,7 +121,7 @@ a {
 .navigation-menu__banquet,
 .navigation-menu__discount,
 .navigation-menu__contacts {
-  margin: 5px;
+  /* margin: 5px; */
   padding: 15px 20px;
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 30px;
@@ -223,7 +225,6 @@ a {
   margin: 9%;
   padding-bottom: 7%;
   margin: 4vw;
-  /* margin-bottom: 7vh; */
   text-align: right;
   color: white;
   font-size: 16px;
