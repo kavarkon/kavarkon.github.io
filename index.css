@@ -109,10 +109,6 @@ a {
   font-family: 'Montserrat', Arial, sans-serif;
 }
 
-/* .address { */
-/*   padding: 10vw; */
-/* } */
-
 .navigation-menu__about,
 .navigation-menu__events,
 .navigation-menu__menu,
@@ -322,7 +318,7 @@ a {
 
 .image-fork {
   height: 100%;
-  width: 40%;
+  width: 60%;
   margin-left: 30%;
   object-fit: cover;
 }
@@ -373,12 +369,6 @@ a {
   border-style: solid none;
   border-width: 1px;
   border-color: #feeb7a;
-}
-
-.menu {
-  height: 100vh;
-  width: 100vw;
-  background: black;
 }
 
 .bar-menu {
