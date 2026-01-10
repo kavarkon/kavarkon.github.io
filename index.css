@@ -33,7 +33,6 @@
 
 body {
   margin: 0;
-  /* font-family: "Montserrat", Arial, sans-serif; */
 }
 
 p {
@@ -326,12 +325,12 @@ a {
 }
 
 .menu__fill_mobile {
-  height: 65%;
+  height: 70%;
   width: calc(100% - 40px);
   margin: 20px;
-  padding: 24% 0;
+  padding: 23% 0;
   flex-direction: column;
-  align-items: stretch;
+  /*align-items: stretch;*/
   justify-content: space-between;
   background: transparent;
   display: flex;
@@ -345,21 +344,16 @@ a {
   font-family: "Montserrat", Arial, sans-serif;
 }
 
-/* .menu__wrapper_mobile { */
-/*   width: 100%; */
-/*   padding-bottom: 25%; */
-/*   display: flex; */
-/*   /* flex-direction: column; */ */
-/*   flex-direction: row; */
-/*   /* align-items: flex-end; */ */
-/*   justify-content: space-around; */
-/* } */
-
 .point-four2_mobile {
-  width: 30%;
-  /* font-family: "Pangolin", Arial, sans-serif; */
-  /* font-family: "Amatic SC"; */
+  width: 25%;
+  font-size: 2.5vh;
+  letter-spacing: -0.55em;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  font-family: 'Pangolin', Arial, sans-serif;
   color: #813e28;
+  display: flex;
+  align-items: center;
 }
 
 .menu-button {
@@ -376,8 +370,10 @@ a {
 .bar-menu {
   height: 100vh;
   width: 100vw;
-  background: #45a87f;
+  background: black;
 }
+
+
 
 .banquet {
   height: 100vh;
