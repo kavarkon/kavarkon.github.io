@@ -215,14 +215,14 @@ a {
   font-size: 30px;
 }
 
-.point-one-two_mobile {
-  margin: 9%;
-  padding-bottom: 7%;
-  margin: 4vw;
-  text-align: right;
-  color: white;
-  font-size: 16px;
-}
+/* .point-one-two_mobile { */
+/*   margin: 9%; */
+/*   padding-bottom: 7%; */
+/*   margin: 4vw; */
+/*   text-align: right; */
+/*   color: white; */
+/*   font-size: 16px; */
+/* } */
 
 .about__point-wrapper_mobile {
   display: flex;
@@ -230,10 +230,16 @@ a {
   align-items: stretch;
 }
 
-.point-two_mobile {
+/* .point-two_mobile { */
+/*   text-align: center; */
+/*   color: white; */
+/*   font-size: 14px; */
+/* } */
+
+.point-one-two_mobile {
   text-align: center;
   color: white;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .events,
@@ -371,6 +377,7 @@ a {
   height: 100vh;
   width: 100vw;
   background: black;
+  color: white;
 }
 
 
