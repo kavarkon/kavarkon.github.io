@@ -331,7 +331,7 @@ a {
 }
 
 .menu__fill_mobile {
-  height: 70%;
+  height: 65%;
   width: calc(100% - 40px);
   margin: 20px;
   padding: 23% 0;
