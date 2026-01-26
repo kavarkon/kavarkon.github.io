@@ -165,7 +165,7 @@ a {
 }
 
 .greeting__fill_mobile {
-  height: 75%;
+  height: 80%;
   width: calc(100% - 40px);
   margin: 20px;
   background: transparent;
@@ -245,7 +245,7 @@ a {
 .point-one-two_mobile {
   text-align: center;
   color: white;
-  font-size: 16px;
+  font-size: 17px;
 }
 
 .events,
@@ -370,7 +370,7 @@ a {
 
 .menu-button {
   text-align: center;
-  font-size: 2vh;
+  font-size: 2.5vh;
   padding: 2vh;
   background-color: rgba(0, 0, 0, 0.7);
   color: white;
