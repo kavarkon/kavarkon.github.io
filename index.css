@@ -145,7 +145,7 @@ a {
 .greeting,
 .about {
   height: 100vh;
-  width: 100%;
+  width: 100vw;
   background: black;
   position: relative;
   isolation: isolate;
@@ -162,6 +162,7 @@ a {
 
 .hand-img {
   width: 100%;
+  /* object-fit: cover; */
 }
 
 .greeting__fill_mobile {
