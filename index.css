@@ -335,6 +335,15 @@ a {
   z-index: 1;
 }
 
+/* .menu__fill_mobile, */
+/* .bar-menu__fill_mobile { */
+/*   justify-content: space-between; */
+/* } */
+/**/
+/* .banquet__fill_mobile { */
+/*   justify-content: space-around; */
+/* } */
+
 .point-four_mobile {
   margin: 20px;
   color: white;
@@ -397,7 +406,15 @@ a {
   font-family: "Montserrat", Arial, sans-serif;
 }
 
+.banquet__point-wrapper_mobile {
+  background-image: url("images/firework.png");
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: auto 100%;
+}
+
 .banquet__point-two_mobile {
+  padding-top: 10vh;
   margin: 20px;
   color: white;
   font-size: 2vh;
