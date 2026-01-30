@@ -167,8 +167,8 @@ a {
     linear-gradient(
       to bottom,
       rgba(0,0,0,1),
-      transparent 15%,
-      transparent 85%,
+      transparent 20%,
+      transparent 80%,
       rgba(0,0,0,1)
     );
 }
