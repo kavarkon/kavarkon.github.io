@@ -51,4 +51,11 @@ document.addEventListener('DOMContentLoaded', () => {
       navigationMenu.classList.add('_active');
     }
   });
+
+  document.querySelector('.js-copy-phone').addEventListener('click', (e) => {
+  e.preventDefault();
+
+  const phone = e.target.textContent.trim();
+  navigator.clipboard.writeText(phone);
+});
 });
