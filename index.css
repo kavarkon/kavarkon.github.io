@@ -174,13 +174,18 @@ a {
 }
 
 .greeting__decor_mobile,
-.about__decor_mobile {
+.about__decor_mobile,
+.banquet__decor_mobile {
   width: 100%;
   position: absolute;
   z-index: 0;
   pointer-events: none;
   display: flex;
 }
+
+/* .banquet__decor_mobile { */
+/*   justify-content: center; */
+/* } */
 
 .hand-img_mobile {
   width: 100%;
@@ -310,14 +315,6 @@ a {
   width: 100%;
 }
 
-@media (min-width: 768px) {
-
-  .events__decor_mobile,
-  .events__fill_mobile {
-    display: none;
-  }
-}
-
 .menu__decor_mobile {
   height: 100%;
   width: 100%;
@@ -337,11 +334,11 @@ a {
 .menu__fill_mobile,
 .bar-menu__fill_mobile,
 .banquet__fill_mobile {
-  height: 70%;
+  height: 75%;
   /* width: calc(100% - 40px); */
   width: 100%;
   /* margin: 20px; */
-  padding: 23% 0;
+  padding: 22% 0;
   flex-direction: column;
   /*align-items: stretch;*/
   justify-content: space-between;
@@ -349,6 +346,10 @@ a {
   display: flex;
   position: absolute;
   z-index: 10;
+}
+
+.banquet__fill_mobile {
+  justify-content: space-around;
 }
 
 /* .menu__fill_mobile, */
@@ -426,32 +427,85 @@ a {
   object-fit: cover;
 }
 
-.point-five_mobile,
-.banquet__point_mobile {
+.main-point_mobile {
   margin: 20px;
   color: white;
-  font-size: 3vh;
+  font-size: 6vw;
   font-family: "Montserrat", Arial, sans-serif;
 }
 
-.banquet__point-wrapper_mobile {
-  background-image: url("images/firework.png");
-  background-repeat: no-repeat;
-  background-position: right center;
-  background-size: auto 100%;
+.gl {
+  width: 100%;
+}
+
+.banquet__point1_mobile {
+  margin: 20px;
+  color: white;
+  font-size: 6vw;
+  font-family: "Montserrat", Arial, sans-serif;
+}
+
+.banquet__point2_mobile {
+  margin: 20px;
+  color: red;
+  text-shadow:
+    0 0 6px #feeb7a,
+    0 0 12px #feeb7a;
+  font-size: 8vw;
+  font-family: "Montserrat", Arial, sans-serif;
+  text-align: right;
 }
 
 .banquet__point-two_mobile {
-  padding-top: 10vh;
-  margin: 20px;
+  /* padding-top: 10vh; */
+  padding: 22px 20px;
   color: white;
   font-size: 2.7vh;
   font-family: "Montserrat", Arial, sans-serif;
+  /* background-image:  */
+  /* url("images/gl.jpg"); */
+  /* background-repeat: no-repeat; */
+  /* background-position: top; */
+  /* background-size: auto 100%; */
+  /* linear-gradient( */
+  /*     to bottom, */
+  /*     /* transparent 0%, */ */
+  /*     transparent 50%, */
+  /*     rgba(254,235,122,0.4) */
+  /*   ); */
+  /* border-style: none none solid none; */
+  /* border-width: 1px; */
+  /* border-color: #feeb7a; */
 }
 
 .connect-text_mobile {
-  margin: 20px;
+  padding: 10px 20px;
   color: white;
   font-size: 2.7vh;
   font-family: "Montserrat", Arial, sans-serif;
+  /* border-style: solid none none none; */
+  /* border-width: 1px; */
+  /* border-color: #feeb7a; */
+}
+
+@media (min-width: 768px) {
+
+  .greeting__decor_mobile,
+  .greeting__fill_mobile,
+  .about__decor_mobile,
+  .about__fill_mobile,
+  .events__decor_mobile,
+  .events__fill_mobile,
+  .menu__decor_mobile,
+  .menu__fill_mobile,
+  .bar-menu__decor_mobile,
+  .bar-menu__fill_mobile,
+  .banquet__decor_mobile,
+  .banquet__fill_mobile,
+  .discount__decor_mobile,
+  .discount__fill_mobile,
+  .contacts__decor_mobile,
+  .contacts__fill_mobile {
+    display: none;
+  }
 }
