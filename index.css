@@ -157,6 +157,22 @@ a {
   isolation: isolate;
 }
 
+.section-gradient {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  pointer-events: none;
+  background-image: 
+    linear-gradient(
+      to bottom,
+      rgba(0,0,0,1),
+      transparent 15%,
+      transparent 85%,
+      rgba(0,0,0,1)
+    );
+}
+
 .greeting__decor_mobile,
 .about__decor_mobile {
   width: 100%;
@@ -182,7 +198,7 @@ a {
   align-items: stretch;
   justify-content: space-between;
   position: absolute;
-  z-index: 1;
+  z-index: 10;
 }
 
 .logo-wrapper_mobile {
@@ -218,7 +234,7 @@ a {
   font-family: "Montserrat", Arial, sans-serif;
   display: flex;
   position: absolute;
-  z-index: 1;
+  z-index: 10;
 }
 
 .point-one_mobile {
@@ -265,7 +281,7 @@ a {
   font-family: "Montserrat", Arial, sans-serif;
   display: flex;
   position: absolute;
-  z-index: 1;
+  z-index: 10;
 }
 
 .point-three_mobile {
@@ -332,7 +348,7 @@ a {
   background: transparent;
   display: flex;
   position: absolute;
-  z-index: 1;
+  z-index: 10;
 }
 
 /* .menu__fill_mobile, */
@@ -429,6 +445,13 @@ a {
   padding-top: 10vh;
   margin: 20px;
   color: white;
-  font-size: 2vh;
+  font-size: 2.7vh;
+  font-family: "Montserrat", Arial, sans-serif;
+}
+
+.connect-text_mobile {
+  margin: 20px;
+  color: white;
+  font-size: 2.7vh;
   font-family: "Montserrat", Arial, sans-serif;
 }
