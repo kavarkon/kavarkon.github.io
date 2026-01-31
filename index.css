@@ -133,6 +133,10 @@ a {
 
 }
 
+.content {
+  font-family: 'Montserrat', Arial, sans-serif;
+}
+
 .greeting,
 .about,
 .events,
@@ -197,7 +201,6 @@ a {
   width: calc(100% - 40px);
   margin: 20px;
   background: transparent;
-  font-family: "Montserrat", Arial, sans-serif;
   display: flex;
   flex-direction: column;
   align-items: stretch;
@@ -229,20 +232,27 @@ a {
   object-fit: contain;
 }
 
-.about__fill_mobile {
-  height: 74%;
-  width: calc(100% - 40px);
-  margin: 20px;
-  padding-top: 25%;
-  flex-direction: column;
-  align-items: stretch;
-  justify-content: space-between;
-  background: transparent;
-  font-family: "Montserrat", Arial, sans-serif;
-  display: flex;
-  position: absolute;
-  z-index: 10;
-}
+/* .about__fill_mobile { */
+/*   height: 74%; */
+/*   width: calc(100% - 40px); */
+/*   margin: 20px; */
+/*   padding-top: 25%; */
+/*   flex-direction: column; */
+/*   /* align-items: stretch; */ */
+/*   justify-content: space-between; */
+/*   background: transparent; */
+/*   display: flex; */
+/*   position: absolute; */
+/*   z-index: 10; */
+/* } */
+
+/* .main-point_mobile { */
+/*   margin: 20px; */
+/*   color: white; */
+/*   font-weight: 300; */
+/*   font-size: 6vw; */
+/* } */
+
 
 .point-one_mobile {
   text-align: left;
@@ -277,19 +287,18 @@ a {
   justify-content: flex-end;
 }
 
-.events__fill_mobile {
-  height: calc(100% - 90px - 8vh);
-  width: calc(100% - 40px);
-  margin: 20px;
-  margin-top: 10vh;
-  flex-direction: column;
-  align-items: stretch;
-  background: transparent;
-  font-family: "Montserrat", Arial, sans-serif;
-  display: flex;
-  position: absolute;
-  z-index: 10;
-}
+/* .events__fill_mobile { */
+/*   height: calc(100% - 90px - 8vh); */
+/*   width: calc(100% - 40px); */
+/*   margin: 20px; */
+/*   margin-top: 10vh; */
+/*   flex-direction: column; */
+/*   align-items: stretch; */
+/*   background: transparent; */
+/*   display: flex; */
+/*   position: absolute; */
+/*   z-index: 10; */
+/* } */
 
 .point-three_mobile {
   text-align: center;
@@ -309,12 +318,16 @@ a {
 }
 
 .extract_mobile {
-  margin-top: 10%;
-  margin-bottom: 4%;
+  /* margin-top: 10%; */
+  /* margin-bottom: 4%; */
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
 }
 
 .image-extract_mobile {
-  width: 100%;
+  width: 75%;
+  object-fit: contain;
 }
 
 .menu__decor_mobile {
@@ -333,10 +346,12 @@ a {
   height: 100%;
 }
 
+.about__fill_mobile,
+.events__fill_mobile,
 .menu__fill_mobile,
 .bar-menu__fill_mobile,
 .banquet__fill_mobile {
-  height: 75%;
+  height: 70%;
   /* width: calc(100% - 40px); */
   width: 100%;
   /* margin: 20px; */
@@ -367,7 +382,6 @@ a {
   margin: 20px;
   color: white;
   font-size: 3vh;
-  font-family: "Montserrat", Arial, sans-serif;
 }
 
 .menu__point-wrapper_mobile {
@@ -378,7 +392,6 @@ a {
   /* letter-spacing: -0.55em; */
   /* writing-mode: vertical-lr; */
   /* text-orientation: upright; */
-  font-family: "Montserrat", Arial, sans-serif;
   color: #c98e7d;
   display: flex;
   flex-direction: column;
@@ -430,12 +443,11 @@ a {
   object-fit: cover;
 }
 
-.main-point_mobile {
-  margin: 20px;
-  color: white;
-  font-size: 6vw;
-  font-family: "Montserrat", Arial, sans-serif;
-}
+/* .main-point_mobile { */
+/*   margin: 20px; */
+/*   color: white; */
+/*   font-size: 6vw; */
+/* } */
 
 .gl {
   width: 100%;
@@ -446,7 +458,6 @@ a {
   margin: 10px 20px;
   color: white;
   font-size: 6vw;
-  font-family: "Montserrat", Arial, sans-serif;
 }
 
 .banquet__point2_mobile {
@@ -456,7 +467,6 @@ a {
     0 0 6px red,
     0 0 12px red;
   font-size: 8vw;
-  font-family: "Montserrat", Arial, sans-serif;
   text-align: right;
 }
 
@@ -465,14 +475,12 @@ a {
   padding: 22px 20px;
   color: white;
   font-size: 4.5vw;
-  font-family: "Montserrat", Arial, sans-serif;
 }
 
 .banquet__connect-text_mobile {
   padding: 6px;
   color: white;
   font-size: 3vw;
-  font-family: "Montserrat", Arial, sans-serif;
   /* text-align: center; */
 }
 
@@ -483,7 +491,6 @@ a {
 }
 
 .go {
-  font-family: "Montserrat", Arial, sans-serif;
   color: white;
   font-size: 5vw;
   padding: 10px;
@@ -496,6 +503,13 @@ a {
   font-size: 5vw;
   border-radius: 5vw;
   background-color: #ffba7a23;
+}
+
+.main-point_mobile {
+  margin: 20px;
+  color: white;
+  font-weight: 300;
+  font-size: 6vw;
 }
 
 @media (min-width: 768px) {
