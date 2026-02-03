@@ -78,9 +78,9 @@ a {
 
 .address-panel._active,
 .navigation-menu._active {
-  width: 80%;
-  height: 90%;
-  padding: 10% 10%;
+  width: 84%;
+  height: 80%;
+  padding: 8%;
   background-color: rgba(0, 0, 0, 0.9);
   color: white;
   display: flex;
@@ -95,17 +95,16 @@ a {
   font-family: 'Amatic SC', Arial, sans-serif;
 }
 
-.navgation-menu._active {
-  font-family: 'Montserrat', Arial, sans-serif;
-}
-
 .navigation-menu__item {
-  padding: 15px 20px;
+  margin: 2px;
+  padding: 10px 15px;
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 30px;
   border-color: #feeb7a;
   border-style: solid;
   border-width: 1px;
+  font-family: 'Montserrat', Arial, sans-serif;
+
 }
 
 .footer {
@@ -197,7 +196,8 @@ a {
 }
 
 .image-fork_mobile {
-  height: 100%;
+  width: 90%;
+  object-fit: contain;
   object-position: bottom right;
 }
 
