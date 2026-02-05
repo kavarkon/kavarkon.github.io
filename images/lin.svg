@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="4" viewBox="0 0 300 4">
+  <path
+    d="
+      M0 2
+      C60 1, 100 1, 150 1
+      C200 1, 240 1, 300 2
+      C240 3, 200 3, 150 3
+      C100 3, 60 3, 0 2
+      Z
+    "
+    fill="#feeb7a"
+  />
+</svg>
