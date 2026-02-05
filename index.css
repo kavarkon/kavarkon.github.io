@@ -129,6 +129,11 @@ a {
   font-family: 'Montserrat', Arial, sans-serif;
 }
 
+.spacer {
+  height: 15vh;
+  background: black;
+}
+
 .greeting,
 .about,
 .events,
@@ -137,17 +142,28 @@ a {
 .banquet,
 .discount,
 .contacts {
-  height: 100vh;
-  width: 100vw;
-  background: black;
-  position: relative;
-  isolation: isolate;
+  height: calc(100vh - 40px);
+  width: calc(100vw - 40px);
+  padding: 20px ;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-between;
 }
 
-.spacer {
-  height: 15vh;
+.greeting {
+  height: calc(100vh - 80px);
+  padding: 20px 20px 62px 20px;
+  background-image: url("images/hand.png");
+  background-size: cover;
+}
+
+.about {
   background: black;
 }
+
+
+
 
 .section-gradient {
   width: 100%;
@@ -261,8 +277,9 @@ a {
   padding: 20px;
 }
 
-.logo-mobile {
+.greeting__logo {
   width: 50%;
+  object-position: center;
 }
 
 .working-hours_mobile {
@@ -382,8 +399,8 @@ a {
   align-items: stretch;
 }
 
-.main-point_mobile {
-  margin: 20px;
+.main-point {
+  margin: 10vh 20px;
   color: white;
   font-size: 6vw;
 }
