@@ -126,6 +126,7 @@ a {
 }
 
 .content {
+  font-family: 'Montserrat', Arial, sans-serif;
 }
 
 .spacer {
@@ -157,13 +158,12 @@ a {
 .banquet,
 .discount,
 .contacts {
-  height: calc(100vh - 52px - 80px);
+  height: calc(100vh - 52px - 90px);
   width: 100vw;
-  padding: 52px 0 80px 0px;
+  padding: 52px 0 90px 0px;
   background-color: black;
   background-size: contain;
   background-repeat: no-repeat;
-  font-family: 'Montserrat', Arial, sans-serif;
   display: flex;
   flex-direction: column;
   align-items: stretch;
@@ -188,6 +188,12 @@ a {
   background-position: top right;
 }
 
+.about__description {
+  text-align: center;
+  color: white;
+  font-size: 4.5vw;
+}
+
 .events {
   background-image: url("images/piano.png");
   background-position: bottom center;
@@ -203,14 +209,14 @@ a {
   padding: 5px 20px;
   padding-top: 15px;
   font-size: 2.7vh;
-  color: #c98e7d;
+  color: #636363;
 }
 
 .menu__business-hours {
   width: 45%;
   padding: 0.5vh 20px;
   font-size: 2vh;
-  color: #c98e7d;
+  color: #636363;
 }
 
 .bar-menu {
@@ -296,16 +302,50 @@ a {
   align-items: stretch;
 }
 
-.main-point {
-  margin: 10vh 20px;
-  color: white;
-  font-size: 6vw;
+.discount {
+  text-align: center;
 }
 
-.secondary-point {
-  text-align: center;
+.discount__item {
+  margin: 20px;
   color: white;
+  font-size: 4vw;
+}
+
+.discount__icon {
+  margin: 10px;
+  height: 32px;
+  weight: 32px;
+}
+
+.discount__item__description {
+  margin: 10px;
+  color: #636363;
+}
+
+.contacts {
+  color: white;
+  text-align: center;
+}
+
+.contacts__item {
+  margin: 20px;
+  padding: 0 10%;
   font-size: 4.5vw;
+}
+
+.contacts__media {
+  border-style: solid none none none;
+  border-width: 1px;
+  border-color: #feeb7a;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-point {
+  margin: 7vh 20px;
+  color: white;
+  font-size: 6vw;
 }
 
 .button_black {
@@ -332,11 +372,6 @@ a {
   justify-content: center;
 }
 
-/* .wrapper_column { */
-/*   display: flex; */
-/*   flex-direction: column; */
-/* } */
-
 .wrapper_column-center {
   padding: 20px;
   display: flex;
@@ -344,32 +379,12 @@ a {
   align-items: center;
 }
 
-
-/* .icon-birthday, */
-/* .icon-marriage { */
-/*   height: 32px; */
-/*   width: 32px; */
-/**/
-/* } */
-
-@media (min-width: 768px) {
-
-  .greeting__decor_mobile,
-  .greeting__fill_mobile,
-  .about__decor_mobile,
-  .about__fill_mobile,
-  .events__decor_mobile,
-  .events__fill_mobile,
-  .menu__decor_mobile,
-  .menu__fill_mobile,
-  .bar-menu__decor_mobile,
-  .bar-menu__fill_mobile,
-  .banquet__decor_mobile,
-  .banquet__fill_mobile,
-  .discount__decor_mobile,
-  .discount__fill_mobile,
-  .contacts__decor_mobile,
-  .contacts__fill_mobile {
-    display: none;
-  }
+.x {
+  padding: 10px;
+  background: black;
+  color: #636363;
+  font-size: 2vh;
+  border-style: solid none none none;
+  border-width: 1px;
+  border-color: #636363;
 }
