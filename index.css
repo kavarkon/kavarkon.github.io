@@ -36,19 +36,24 @@ a {
   font-family: "Montserrat", Arial, sans-serif;
 }
 
-.main-buttons-wrapper {
+/* .main-buttons-wrapper { */
+/*   top: 0; */
+/*   left: 0; */
+/*   position: fixed; */
+/*   z-index: 100; */
+/*   height: 100%; */
+/*   width: 100%; */
+/*   display: flex; */
+/*   flex-direction: column; */
+/*   justify-content: space-between; */
+/* } */
+
+.header {
   top: 0;
   left: 0;
   position: fixed;
   z-index: 100;
-  height: 100%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.header {
+  width: calc(100vw - 20px - 20px);
   padding: 20px;
   background: transparent;
   display: flex;
@@ -61,14 +66,8 @@ a {
   height: 32px;
   width: 32px;
   background: transparent;
-  display: flex;
   cursor: pointer;
-}
-
-.address-button__icon,
-.navigation-button__icon {
-  width: 100%;
-  height: 100%;
+  display: block;
 }
 
 .address-panel,
@@ -78,19 +77,22 @@ a {
 
 .address-panel._active,
 .navigation-menu._active {
+  top: 10vh;
   width: 84%;
-  height: 80%;
+  height: 70vh;
   padding: 8%;
+  position: fixed;
+  z-index: 100;
   background-color: rgba(0, 0, 0, 0.9);
   color: white;
+  text-align: center;
   display: flex;
-  align-items: center;
   flex-direction: column;
+  align-items: center;
   justify-content: space-around;
 }
 
 .address-panel._active {
-  text-align: center;
   font-size: 10vw;
   font-family: 'Amatic SC', Arial, sans-serif;
 }
@@ -104,10 +106,15 @@ a {
   border-style: solid;
   border-width: 1px;
   font-family: 'Montserrat', Arial, sans-serif;
-
+  cursor: pointer;
 }
 
 .footer {
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  z-index: 100;
+  width: calc(100vw - 20px - 20px);
   padding: 20px;
   background: transparent;
   display: flex;
@@ -122,7 +129,8 @@ a {
   font-weight: 700;
   color: black;
   font-family: "Montserrat", Arial, sans-serif;
-
+  cursor: pointer;
+  display: block;
 }
 
 .content {
@@ -132,22 +140,6 @@ a {
 .spacer {
   height: 15vh;
   background: black;
-}
-
-.section-gradient {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  z-index: 1;
-  pointer-events: none;
-  background-image: 
-    linear-gradient(
-      to bottom,
-      rgba(0,0,0,1),
-      transparent 20%,
-      transparent 80%,
-      rgba(0,0,0,1)
-    );
 }
 
 .greeting,
@@ -239,15 +231,7 @@ a {
 .menu__additional-positions {
   width: 42%;
   padding: 5px 20px;
-  /* padding-top: 15px; */
   font-size: 4vw;
-  color: #636363;
-}
-
-.menu__business-hours {
-  width: 45%;
-  padding: 0.5vh 20px;
-  font-size: 2vh;
   color: #636363;
 }
 

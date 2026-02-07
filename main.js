@@ -18,6 +18,10 @@ document.addEventListener('DOMContentLoaded', () => {
     icon.src = isActive ? icon.dataset.active : icon.dataset.default;
   }
 
+  function setIcon(button, isActive) {
+    button.src = isActive ? button.dataset.active : button.dataset.default;
+  }
+
   function closeAll(exceptButton = null) {
     buttons.forEach(button => {
       if (button !== exceptButton && button.classList.contains('_active')) {
@@ -52,10 +56,4 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  document.querySelector('.js-copy-phone').addEventListener('click', (e) => {
-  e.preventDefault();
-
-  const phone = e.target.textContent.trim();
-  navigator.clipboard.writeText(phone);
-});
 });

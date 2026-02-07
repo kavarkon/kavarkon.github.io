@@ -7,54 +7,43 @@
     <title>Сайт бара</title>
   </head>
   <body>
-
-    <div class="main-buttons-wrapper">
-
-      <div class="header">
-        <div class="address-button js-toggle js-address-button">
-          <img class="address-button__icon" src="icons/strelka.svg" data-default="icons/strelka.svg" data-active="icons/x.svg" alt="">
-        </div>
-        <div class="navigation-button js-toggle js-navigation-button">
-          <img class="navigation-button__icon" src="icons/kvadratik.svg" data-default="icons/kvadratik.svg" data-active="icons/x.svg" alt="">
-        </div>
+    <div class="header">
+      <img class="address-button js-toggle js-address-button" src="icons/strelka.svg" data-default="icons/strelka.svg" data-active="icons/x.svg" alt="address button">
+      <img class="navigation-button js-toggle js-navigation-button" src="icons/kvadratik.svg" data-default="icons/kvadratik.svg" data-active="icons/x.svg" alt="navigation button">
+    </div>
+    <div class="address-panel js-address-panel">
+      Нижний Сусальный переулок<br>
+      дом 5, стр. 4а<span class="copy-button"><img class="copy-icon" src="icons/copy.svg" alt=""></span>
+    </div>
+    <div class="navigation-menu js-navigation-menu">
+      <a class="navigation-menu__item" href="#about">
+        О НАС
+      </a>
+      <div class="navigation-menu__item">
+        <a href="#events">МЕРОПРИЯТИЯ</a>
       </div>
-
-      <div class="address-panel js-address-panel">
-        <p>Нижний Сусальный переулок<br>
-          дом 5, стр. 4а<span class="copy-button"><img class="copy-icon" src="icons/copy.svg"></span></p>
+      <div class="navigation-menu__item">
+        <a href="#menu">МЕНЮ КУХНИ</a>
       </div>
-
-      <div class="navigation-menu js-navigation-menu">
-        <div class="navigation-menu__item">
-          <a href="#about">О НАС</a>
-        </div>
-        <div class="navigation-menu__item">
-          <a href="#events">МЕРОПРИЯТИЯ</a>
-        </div>
-        <div class="navigation-menu__item">
-          <a href="#menu">МЕНЮ КУХНИ</a>
-        </div>
-        <div class="navigation-menu__item">
-          <a href="#bar-menu">МЕНЮ БАРА</a>
-        </div>
-        <div class="navigation-menu__item">
-          <a href="#banquet">БАНКЕТ</a>
-        </div>
-        <div class="navigation-menu__item">
-          <a href="#discount">АКЦИИ</a>
-        </div>
-        <div class="navigation-menu__item">
-          <a href="#contacts">КОНТАКТЫ</a>
-        </div>
+      <div class="navigation-menu__item">
+        <a href="#bar-menu">МЕНЮ БАРА</a>
       </div>
-
-      <div class="footer">
-        <a class="reservation-button">ЗАБРОНИРОВАТЬ СТОЛ</a>
+      <div class="navigation-menu__item">
+        <a href="#banquet">БАНКЕТ</a>
       </div>
+      <div class="navigation-menu__item">
+        <a href="#discount">АКЦИИ</a>
+      </div>
+      <div class="navigation-menu__item">
+        <a href="#contacts">КОНТАКТЫ</a>
+      </div>
+    </div>
+
+    <div class="footer">
+      <a class="reservation-button">ЗАБРОНИРОВАТЬ СТОЛ</a>
     </div>
     <div class="content">
       <div class="greeting">
-        <!-- <div class="section-gradient"></div> -->
         <div class="wrapper_row-center">
           <img class="greeting__logo" src="icons/main-logo-min.svg" alt="logo TEMPLE BAR">
         </div>
@@ -80,7 +69,6 @@
       </div>
       <div class="spacer"></div>
       <div class="menu" id="menu">
-        <!-- <div class="section-gradient"></div> -->
         <div>
           <p class="main-point">СОЧНЫЕ СТЕЙКИ ЗЕРНОВОГО ОТКОРМА</p>
           <p class="menu__additional-positions">ЕСТЬ ДЕТСКОЕ МЕНЮ</p>
@@ -90,7 +78,6 @@
       </div>
       <div class="spacer"></div>
       <div class="bar-menu" id="bar-menu">
-        <!-- <div class="section-gradient"></div> -->
         <video
           class="bar-menu__background js-hero-video"
           src="images/bubbles.mp4"
@@ -99,7 +86,6 @@
           muted
           playsinline>
         </video>
-        <!-- </div> -->
         <div class="bar-menu__content">
         <p class="main-point">ГОЛОВОКРУЖИТЕЛЬНЫЙ ВЫБОР ПЕННОГО</p>
         <a class="button_black">МЕНЮ БАРА</a>
@@ -107,7 +93,6 @@
       </div>
       <div class="spacer"></div>
       <div class="banquet" id="banquet">
-        <!-- <div class="section-gradient"></div> -->
         <div>
           <p class="banquet__main-point-1">ЕСТЬ ПОВОД - ЕСТЬ</p>
           <p class="banquet__main-point-2">TEMPLE BAR</p>
@@ -130,7 +115,6 @@
       </div>
       <div class="spacer"></div>
       <div class="discount" id="discount">
-        <!-- <div class="section-gradient"></div> -->
         <p class="main-point">АКТУАЛЬНЫЕ АКЦИИ</p>
         <div class="discount__item wrapper_column-center">
           <img class="discount__icon" src="icons/marriage.svg" alt="">
@@ -147,7 +131,6 @@
       </div>
       <div class="spacer"></div>
       <div class="contacts" id="contacts">
-        <!-- <div class="section-gradient"></div> -->
         <p class="main-point">КОНТАКТЫ</p>
         <a class="contacts__item">
           Нижний Сусальный переулок,
