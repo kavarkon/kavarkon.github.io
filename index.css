@@ -174,7 +174,15 @@ a {
   height: calc(100vh - 20px - 80px);
   width: calc(100vw - 40px);
   padding: 20px 20px 80px 20px;
-  background-image: url("images/hand.png");
+  background-image: 
+    linear-gradient(
+      to bottom,
+      rgba(0,0,0,1),
+      transparent 20%,
+      transparent 80%,
+      rgba(0,0,0,1)
+    ),
+    url("images/hand.png");
   background-position: top right;
 }
 
@@ -184,7 +192,15 @@ a {
 }
 
 .about {
-  background-image: url("images/lamp.png");
+  background-image: 
+    linear-gradient(
+      to bottom,
+      rgba(0,0,0,1),
+      transparent 20%,
+      transparent 80%,
+      rgba(0,0,0,1)
+    ),
+    url("images/lamp.png");
   background-position: top right;
 }
 
@@ -195,12 +211,28 @@ a {
 }
 
 .events {
-  background-image: url("images/piano.png");
+  background-image: 
+    linear-gradient(
+      to bottom,
+      rgba(0,0,0,1),
+      transparent 20%,
+      transparent 80%,
+      rgba(0,0,0,1)
+    ),
+    url("images/piano.png");
   background-position: bottom center;
 }
 
 .menu {
-  background-image: url("images/fork.png");
+  background-image: 
+    linear-gradient(
+      to bottom,
+      rgba(0,0,0,1),
+      transparent 20%,
+      transparent 80%,
+      rgba(0,0,0,1)
+    ),
+    url("images/fork.png");
   background-position: bottom right;
 }
 
