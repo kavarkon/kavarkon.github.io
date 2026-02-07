@@ -201,7 +201,7 @@ a {
 
 .menu {
   background-image: url("images/fork.png");
-  background-position: center right;
+  background-position: bottom right;
 }
 
 .menu__additional-positions {
