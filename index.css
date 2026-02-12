@@ -215,6 +215,17 @@ a {
   background-position: bottom center;
 }
 
+.events_filmstrip_wrap {
+  height: 24vh;
+  overflow: hidden;
+}
+
+.events_filmstrip {
+  height: 100%;
+  width: auto;
+  display: block;
+}
+
 .menu {
   background-image: 
     linear-gradient(
