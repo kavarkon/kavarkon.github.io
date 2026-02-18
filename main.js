@@ -1,22 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-  let lastInnerHeight = 0;
-
-  function setVh(force = false) {
-    const h = window.innerHeight;
-
-    // iOS дергает resize из-за адресной строки — игнорируем мелкие изменения
-    if (!force && lastInnerHeight && Math.abs(h - lastInnerHeight) < 80) return;
-
-    lastInnerHeight = h;
-    document.documentElement.style.setProperty('--vh', `${h * 0.01}px`);
-  }
-
-  setVh(true);
-
-  window.addEventListener('orientationchange', () => setVh(true));
-  window.addEventListener('resize', () => setVh(false));
-
   const buttons = document.querySelectorAll('.js-toggle');
 
   const addressButton = document.querySelector('.js-address-button');
@@ -29,11 +12,8 @@ document.addEventListener('DOMContentLoaded', () => {
   if (heroVideo) {
     heroVideo.muted = true;
     heroVideo.playbackRate = 0.5;
-  }
-
-  function setIcon(button, isActive) {
-    const icon = button.querySelector('img');
-    icon.src = isActive ? icon.dataset.active : icon.dataset.default;
+    // На iOS autoplay может не сработать без явного вызова play()
+    heroVideo.play().catch(() => {});
   }
 
   function setIcon(button, isActive) {
