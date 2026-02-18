@@ -1,11 +1,21 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-  function setVh() {
-    document.documentElement.style.setProperty('--vh', `${window.innerHeight * 0.01}px`);
+  let lastInnerHeight = 0;
+
+  function setVh(force = false) {
+    const h = window.innerHeight;
+
+    // iOS дергает resize из-за адресной строки — игнорируем мелкие изменения
+    if (!force && lastInnerHeight && Math.abs(h - lastInnerHeight) < 80) return;
+
+    lastInnerHeight = h;
+    document.documentElement.style.setProperty('--vh', `${h * 0.01}px`);
   }
-  setVh();
-  window.addEventListener('resize', setVh);
-  window.addEventListener('orientationchange', setVh);
+
+  setVh(true);
+
+  window.addEventListener('orientationchange', () => setVh(true));
+  window.addEventListener('resize', () => setVh(false));
 
   const buttons = document.querySelectorAll('.js-toggle');
 
