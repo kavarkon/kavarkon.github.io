@@ -166,7 +166,7 @@ a {
       transparent 80%,
       rgba(0,0,0,1)
     ),
-    url("images/hand.png");
+    url("images/hand.jpg");
   background-position: top right;
 }
 
@@ -184,7 +184,7 @@ a {
       transparent 80%,
       rgba(0,0,0,1)
     ),
-    url("images/lamp.png");
+    url("images/lamp.jpg");
   background-position: top right;
 }
 
@@ -203,7 +203,7 @@ a {
       transparent 80%,
       rgba(0,0,0,1)
     ),
-    url("images/piano.png");
+    url("images/piano.jpg");
   background-position: bottom center;
 }
 
@@ -227,7 +227,7 @@ a {
       transparent 80%,
       rgba(0,0,0,1)
     ),
-    url("images/fork.png");
+    url("images/fork.jpg");
   background-position: bottom right;
 }
 
