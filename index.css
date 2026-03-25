@@ -235,7 +235,7 @@ a {
   width: 42%;
   padding: 5px 20px;
   font-size: 4vw;
-  color: #636363;
+  color: #8a6d41;
 }
 
 .bar-menu {
@@ -306,8 +306,8 @@ a {
   border-radius: 4vw;
   border-style: solid;
   border-width: 1px;
-  border-color: #feeb7a;
-  background: rgba(254,235,122,0.05);
+  border-color: #8a6d41;
+  /* background: rgba(255,255,255,0.03); */
   color: white;
   text-align: center;
   font-size: 3.5vw;
@@ -348,12 +348,8 @@ a {
   font-size: 4.5vw;
 }
 
-.contacts__media {
-  border-style: solid none none none;
-  border-width: 1px;
-  border-color: #feeb7a;
-  display: flex;
-  flex-direction: column;
+.contacts__item_link {
+  text-decoration: underline 1px #7a613b;
 }
 
 .main-point {
