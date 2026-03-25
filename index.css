@@ -235,7 +235,7 @@ a {
   width: 42%;
   padding: 5px 20px;
   font-size: 4vw;
-  color: #8a6d41;
+  color: #636363;
 }
 
 .bar-menu {
@@ -349,7 +349,7 @@ a {
 }
 
 .contacts__item_link {
-  text-decoration: underline 1px #7a613b;
+  text-decoration: underline 1px #636363;
 }
 
 .main-point {
