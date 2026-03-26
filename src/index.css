@@ -3,7 +3,7 @@
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 300;
-  src: url('fonts/montserrat-v31-cyrillic_cyrillic-ext_latin-300.woff2') format('woff2');
+  src: url('assets/fonts/montserrat-v31-cyrillic_cyrillic-ext_latin-300.woff2') format('woff2');
 }
 
 @font-face {
@@ -11,7 +11,7 @@
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 700;
-  src: url('fonts/montserrat-v31-cyrillic_cyrillic-ext_latin-700.woff2') format('woff2');
+  src: url('assets/fonts/montserrat-v31-cyrillic_cyrillic-ext_latin-700.woff2') format('woff2');
 }
 
 @font-face {
@@ -19,7 +19,7 @@
   font-family: 'Amatic SC';
   font-style: normal;
   font-weight: 400;
-  src: url('fonts/amatic-sc-v28-cyrillic_latin-regular.woff2') format('woff2');
+  src: url('assets/fonts/amatic-sc-v28-cyrillic_latin-regular.woff2') format('woff2');
 }
 
 body {
@@ -93,7 +93,7 @@ a {
   padding: 10px 15px;
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 30px;
-  border-color: #feeb7a;
+  border-color: #ffe791;
   border-style: solid;
   border-width: 1px;
   font-family: 'Montserrat', Arial, sans-serif;
@@ -117,13 +117,17 @@ a {
 .reservation-button {
   padding: 14px 20px;
   border-radius: 30px;
-  background: #feeb7a;
+  background: #ffe791;
   font-size: 10px;
   font-weight: 700;
   color: black;
   font-family: "Montserrat", Arial, sans-serif;
   cursor: pointer;
   display: block;
+}
+
+#restoplace-wrapper-btn {
+  display: none;
 }
 
 .content {
@@ -166,7 +170,7 @@ a {
       transparent 80%,
       rgba(0,0,0,1)
     ),
-    url("images/hand.jpg");
+    url("assets/images/hand.jpg");
   background-position: top right;
 }
 
@@ -184,7 +188,7 @@ a {
       transparent 80%,
       rgba(0,0,0,1)
     ),
-    url("images/lamp.jpg");
+    url("assets/images/lamp.jpg");
   background-position: top right;
 }
 
@@ -203,7 +207,7 @@ a {
       transparent 80%,
       rgba(0,0,0,1)
     ),
-    url("images/piano.jpg");
+    url("assets/images/piano.jpg");
   background-position: bottom center;
 }
 
@@ -227,7 +231,7 @@ a {
       transparent 80%,
       rgba(0,0,0,1)
     ),
-    url("images/fork.jpg");
+    url("assets/images/fork.jpg");
   background-position: bottom right;
 }
 
@@ -235,7 +239,7 @@ a {
   width: 42%;
   padding: 5px 20px;
   font-size: 4vw;
-  color: #636363;
+  color: #9e9e9e;
 }
 
 .bar-menu {
@@ -265,7 +269,7 @@ a {
 }
 
 .banquet {
-  background-image: url("images/gl1.jpg");
+  background-image: url("assets/images/gl1.jpg");
   background-position: top center;
 }
 
@@ -278,7 +282,7 @@ a {
 
 .banquet__main-point-2 {
   margin: 10px 20px;
-  color: #feeb7a;
+  color: #ffe791;
   text-shadow:
     0 0 6px red,
     0 0 12px red;
@@ -306,7 +310,7 @@ a {
   border-radius: 4vw;
   border-style: solid;
   border-width: 1px;
-  border-color: #8a6d41;
+  border-color: #ffe791;
   /* background: rgba(255,255,255,0.03); */
   color: white;
   text-align: center;
@@ -334,7 +338,7 @@ a {
 
 .discount__item__description {
   margin: 10px;
-  color: #636363;
+  color: #9e9e9e;
 }
 
 .contacts {
@@ -349,7 +353,7 @@ a {
 }
 
 .contacts__item_link {
-  text-decoration: underline 1px #636363;
+  text-decoration: underline 1px #9e9e9e;
 }
 
 .main-point {
@@ -369,7 +373,7 @@ a {
   color: white;
   border-style: solid none;
   border-width: 1px;
-  border-color: #feeb7a;
+  border-color: #ffe791;
 }
 
 .wrapper_row {
