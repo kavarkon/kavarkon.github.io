@@ -239,7 +239,7 @@ a {
   width: 42%;
   padding: 5px 20px;
   font-size: 4vw;
-  color: #9e9e9e;
+  color: white;
 }
 
 .menu__modal__open {
@@ -270,15 +270,15 @@ a {
 }
 
 .menu__modal__cancel {
-  top: 0;
+  bottom: 0;
   right: 0;
   position: fixed;
   height: 32px;
   width: 32px;
   z-index: 2;
   display: block;
-  margin: 20px;
-  margin-top: calc(env(safe-area-inset-top) + 20px);
+  margin: 30px;
+  margin-bottom: calc(env(safe-area-inset-top) + 60px);
   /* background: rgba(0, 0, 0, 0.8); */
   cursor: pointer;
 }
