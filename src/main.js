@@ -64,4 +64,23 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
+  const menuModal = document.querySelector('.menu__modal');
+  const menuModalOpenButton = document.querySelector('.menu__modal__open');
+  const menuModalCloseButton = document.querySelector('.menu__modal__cancel');
+
+  function showModal() {
+    menuModal.classList.add('menu__modal--visible');
+  }
+
+  function hideModal() {
+    menuModal.classList.remove('menu__modal--visible');
+  }
+
+  if (menuModalOpenButton && menuModal) {
+    menuModalOpenButton.addEventListener('click', showModal);
+  }
+
+  if (menuModalCloseButton && menuModal) {
+    menuModalCloseButton.addEventListener('click', hideModal);
+  }
 });
