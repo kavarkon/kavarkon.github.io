@@ -248,7 +248,7 @@ a {
 }
 
 .menu__modal {
-  z-index: 999;
+  z-index: 9999;
   display: none;
   position: fixed;
   inset: 0;
@@ -257,7 +257,6 @@ a {
   overflow-y: auto;
   overflow-x: hidden;
   background: black;
-  z-index: 999;
 }
 
 .menu__modal--visible {
@@ -279,18 +278,11 @@ a {
   display: block;
   margin: 30px;
   margin-bottom: calc(env(safe-area-inset-top) + 60px);
-  /* background: rgba(0, 0, 0, 0.8); */
   cursor: pointer;
 }
 
 .menu__modal__cancel:hover {
   background: black;
-}
-
-.modal__content {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
 }
 
 .bar-menu {
@@ -316,8 +308,53 @@ a {
   display: flex;
   align-items: stretch;
   position: relative;
-  z-index: 10;
+  /* z-index: 1; */
 }
+
+.bar-menu__modal__open {
+  cursor: pointer;
+  display: block;
+}
+
+.bar-menu__modal {
+  z-index: 9999;
+  display: none;
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: var(--initial-vh);
+  overflow-y: auto;
+  overflow-x: hidden;
+  background: black;
+}
+
+.bar-menu__modal--visible {
+  display: block;
+}
+
+.bar-menu__modal__cancel {
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  height: 32px;
+  width: 32px;
+  z-index: 2;
+  display: block;
+  margin: 30px;
+  margin-bottom: calc(env(safe-area-inset-top) + 60px);
+  cursor: pointer;
+}
+
+.menu__modal__cancel:hover {
+  background: black;
+}
+
+.modal__content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
 
 .banquet {
   background-image: url("./assets/images/gl1.jpg");

@@ -83,4 +83,24 @@ document.addEventListener('DOMContentLoaded', () => {
   if (menuModalCloseButton && menuModal) {
     menuModalCloseButton.addEventListener('click', hideModal);
   }
+
+  const barMenuModal = document.querySelector('.bar-menu__modal');
+  const barMenuModalOpenButton = document.querySelector('.bar-menu__modal__open');
+  const barMenuModalCloseButton = document.querySelector('.bar-menu__modal__cancel');
+
+  function showBarModal() {
+    barMenuModal.classList.add('bar-menu__modal--visible');
+  }
+
+  function hideBarModal() {
+    barMenuModal.classList.remove('bar-menu__modal--visible');
+  }
+
+  if (barMenuModalOpenButton && barMenuModal) {
+    barMenuModalOpenButton.addEventListener('click', showBarModal);
+  }
+
+  if (barMenuModalCloseButton && barMenuModal) {
+    barMenuModalCloseButton.addEventListener('click', hideBarModal);
+  }
 });
