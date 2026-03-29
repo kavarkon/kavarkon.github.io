@@ -1,9 +1,7 @@
-export default {
-  root: './src',
-  base: './',
+import { defineConfig } from 'vite'
+
+export default defineConfig({
   build: {
-    outDir: '../docs',
-  },
-  server: { open: true },
-  host: '0.0.0.0'
-}
+    assetsInlineLimit: 0
+  }
+})

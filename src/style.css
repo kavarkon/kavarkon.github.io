@@ -3,7 +3,7 @@
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 300;
-  src: url('assets/fonts/montserrat-v31-cyrillic_cyrillic-ext_latin-300.woff2') format('woff2');
+  src: url('./assets/fonts/montserrat-v31-cyrillic_cyrillic-ext_latin-300.woff2') format('woff2');
 }
 
 @font-face {
@@ -11,7 +11,7 @@
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 700;
-  src: url('assets/fonts/montserrat-v31-cyrillic_cyrillic-ext_latin-700.woff2') format('woff2');
+  src: url('./assets/fonts/montserrat-v31-cyrillic_cyrillic-ext_latin-700.woff2') format('woff2');
 }
 
 @font-face {
@@ -19,7 +19,7 @@
   font-family: 'Amatic SC';
   font-style: normal;
   font-weight: 400;
-  src: url('assets/fonts/amatic-sc-v28-cyrillic_latin-regular.woff2') format('woff2');
+  src: url('./assets/fonts/amatic-sc-v28-cyrillic_latin-regular.woff2') format('woff2');
 }
 
 body {
@@ -170,7 +170,7 @@ a {
       transparent 80%,
       rgba(0,0,0,1)
     ),
-    url("assets/images/hand.jpg");
+    url("./assets/images/hand.jpg");
   background-position: top right;
 }
 
@@ -188,7 +188,7 @@ a {
       transparent 80%,
       rgba(0,0,0,1)
     ),
-    url("assets/images/lamp.jpg");
+    url("./assets/images/lamp.jpg");
   background-position: top right;
 }
 
@@ -207,7 +207,7 @@ a {
       transparent 80%,
       rgba(0,0,0,1)
     ),
-    url("assets/images/piano.jpg");
+    url("./assets/images/piano.jpg");
   background-position: bottom center;
 }
 
@@ -231,7 +231,7 @@ a {
       transparent 80%,
       rgba(0,0,0,1)
     ),
-    url("assets/images/fork.jpg");
+    url("./assets/images/fork.jpg");
   background-position: bottom right;
 }
 
@@ -269,7 +269,7 @@ a {
 }
 
 .banquet {
-  background-image: url("assets/images/gl1.jpg");
+  background-image: url("./assets/images/gl1.jpg");
   background-position: top center;
 }
 

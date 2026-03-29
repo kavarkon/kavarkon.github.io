@@ -3,13 +3,13 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="./src/style.css">
     <title>Сайт бара</title>
   </head>
   <body>
     <div class="header">
-      <img class="address-button js-toggle js-address-button" src="assets/icons/strelka.svg" data-default="assets/icons/strelka.svg" data-active="assets/icons/x.svg" alt="address button">
-      <img class="navigation-button js-toggle js-navigation-button" src="assets/icons/kvadratik.svg" data-default="assets/icons/kvadratik.svg" data-active="assets/icons/x.svg" alt="navigation button">
+      <img class="address-button js-toggle js-address-button" src="/strelka.svg" data-default="/strelka.svg" data-active="x.svg" alt="address button">
+      <img class="navigation-button js-toggle js-navigation-button" src="/kvadratik.svg" data-default="/kvadratik.svg" data-active="/x.svg" alt="navigation button">
     </div>
     <div class="address-panel js-address-panel">
       <a href="https://yandex.ru/maps/213/moscow/?ll=37.664393%2C55.759963&mode=poi&poi%5Bpoint%5D=37.664006%2C55.760258&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D122642050676&utm_campaign=desktop&utm_medium=search&utm_source=maps&z=18.45"
@@ -34,7 +34,7 @@
     <div class="content">
       <div class="greeting">
         <div class="wrapper_row-center">
-          <img class="greeting__logo" src="assets/icons/main-logo-min.svg" alt="logo TEMPLE BAR">
+          <img class="greeting__logo" src="./src/assets/icons/main-logo-min.svg" alt="logo TEMPLE BAR">
         </div>
         <p class="main-point">ЖДЕМ ВАС<br>
           КАЖДЫЙ ДЕНЬ<br><br>
@@ -46,7 +46,7 @@
         <p class="main-point">TEMPLE BAR - ЭТО</p>
         <div class="wrapper_column-center">
           <p class="about__description">МЕСТО, ГДЕ ЖИВАЯ МУЗЫКА ДОПОЛНЯЕТСЯ ОТЛИЧНОЙ КУХНЕЙ И ПРАВИЛЬНЫМИ НАПИТКАМИ</p>
-          <img class="about-line_mobile" src="assets/images/line.svg" alt="">
+          <img class="about-line_mobile" src="./src/assets/images/line.svg" alt="">
         </div>
       </div>
       <div class="spacer"></div>
@@ -54,7 +54,7 @@
         <div>
           <p class="main-point">РЕГУЛЯРНЫЕ ЖИВЫЕ ВЫСТУПЛЕНИЯ И МЕРОПРИЯТИЯ</p>
           <div class="events_filmstrip_wrap">
-            <img class="events_filmstrip" src="assets/images/filmstrip.svg" alt="">
+            <img class="events_filmstrip" src="./src/assets/images/filmstrip.svg" alt="">
           </div>
         </div>
         <!-- <a class="button_black">ВСЕ МЕРОПРИЯТИЯ</a> -->
@@ -72,7 +72,7 @@
       <div class="bar-menu" id="bar-menu">
         <video
           class="bar-menu__background js-hero-video"
-          src="assets/images/bubbles.mp4"
+          src="./src/assets/images/bubbles.mp4"
           autoplay
           loop
           muted
@@ -110,16 +110,16 @@
       <div class="discount" id="discount">
         <p class="main-point">АКТУАЛЬНЫЕ АКЦИИ</p>
         <div class="discount__item wrapper_column-center">
-          <img class="discount__icon" src="assets/icons/marriage.svg" alt="">
+          <img class="discount__icon" src="./src/assets/icons/marriage.svg" alt="">
           СКИДКА 20% В ДЕНЬ СВАДЬБЫ
           <p class="discount__item__description">при предъявлении свидетельства о регистрации брака</p>
-          <img src="assets/images/lin.svg" alt="">
+          <img src="./src/assets/images/lin.svg" alt="">
         </div>
         <div class="discount__item wrapper_column-center">
-          <img class="discount__icon" src="assets/icons/birthday.svg" alt="">
+          <img class="discount__icon" src="./src/assets/icons/birthday.svg" alt="">
           СКИДКА 20% В ДЕНЬ РОЖДЕНИЯ
           <p class="discount__item__description">и 7 дней после<br>при предъявлении документа, удостоверяющего личность</p>
-          <img src="assets/images/lin.svg" alt="">
+          <img src="./src/assets/images/lin.svg" alt="">
         </div>
       </div>
       <div class="spacer"></div>
@@ -149,7 +149,7 @@
       </div>
     </div>
 
-    <script type="module" src="/main.js"></script>
+    <script type="module" src="/src/main.js"></script>
     <script src='https://app.restoplace.cc/widget.js?h=17d7c50ff087faf7190c' async></script>
   </body>
 </html>
