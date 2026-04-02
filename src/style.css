@@ -26,6 +26,11 @@ body {
   margin: 0;
 }
 
+.body--locked {
+  overflow: hidden;
+  height: var(--initial-vh);
+}
+
 p {
   margin: 0;
 }

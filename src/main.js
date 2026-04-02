@@ -70,10 +70,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function showModal() {
     menuModal.classList.add('menu__modal--visible');
+    document.body.classList.add('body--locked');
   }
 
   function hideModal() {
     menuModal.classList.remove('menu__modal--visible');
+    document.body.classList.remove('body--locked');
   }
 
   if (menuModalOpenButton && menuModal) {
@@ -90,10 +92,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function showBarModal() {
     barMenuModal.classList.add('bar-menu__modal--visible');
+    document.body.classList.add('body--locked');
   }
 
   function hideBarModal() {
     barMenuModal.classList.remove('bar-menu__modal--visible');
+    document.body.classList.remove('body--locked');
   }
 
   if (barMenuModalOpenButton && barMenuModal) {
