@@ -24,6 +24,7 @@
 
 body {
   margin: 0;
+  background-color: black;
 }
 
 .body--locked {
@@ -53,6 +54,18 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  @media (min-width: 1024px) {
+    justify-content: center;
+    position: static;
+  }
+}
+
+.greeting__logo_desktop {
+  display: none;
+  @media (min-width: 1024px) {
+    width: 20vw;
+    display: block;
+  }
 }
 
 .address-button,
@@ -62,6 +75,9 @@ a {
   background: transparent;
   cursor: pointer;
   display: block;
+  @media (min-width: 1024px) {
+    display: none;
+  }
 }
 
 .address-panel,
@@ -69,10 +85,16 @@ a {
   display: none;
 }
 
+@media (min-width: 1024px) {
+  .address-panel {
+    display: none !important;
+  }
+}
+
 .address-panel._active,
 .navigation-menu._active {
   top: 0;
-  min-height: var(--initial-vh);
+  height: var(--initial-vh);
   width: 100%;
   padding: 20% 0;
   box-sizing: border-box;
@@ -87,6 +109,25 @@ a {
   justify-content: space-around;
 }
 
+@media (min-width: 1024px) {
+  .navigation-menu {
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: 25vw;
+    box-sizing: border-box;
+    position: fixed;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+
+    /* padding: 20px; */
+    background: transparent;
+  }
+}
+
 .address-panel._active {
   font-size: 8vw;
   font-family: 'Amatic SC', Arial, sans-serif;
@@ -96,13 +137,21 @@ a {
   margin: 2px;
   padding: 10px 15px;
   background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 30px;
+  border-radius: 900px;
   border-color: #ffe791;
   border-style: solid;
   border-width: 1px;
-  font-size: 4vw;
+  color: white;
+  font-size: 16px;
   font-family: 'Montserrat', Arial, sans-serif;
   cursor: pointer;
+  @media (min-width: 1024px) {
+    margin: 22px 0;
+    padding: 16px 25px;
+    border-style: solid none solid solid;
+    border-radius: 900px 0 0 900px;
+    font-size: 18px;
+  }
 }
 
 .footer {
@@ -120,10 +169,10 @@ a {
 }
 
 .reservation-button {
-  padding: 3vw 4vw;
-  border-radius: 30px;
+  padding: 15px  25px;
+  border-radius: 900px;
   background: #ffe791;
-  font-size: 3vw;
+  font-size: 14px;
   font-weight: 700;
   color: black;
   font-family: "Montserrat", Arial, sans-serif;
@@ -137,6 +186,10 @@ a {
 
 .content {
   font-family: 'Montserrat', Arial, sans-serif;
+  @media (min-width: 1024px) {
+    left: 0;
+    width: 80vw;
+  }
 }
 
 .spacer {
@@ -152,7 +205,7 @@ a {
 .banquet,
 .discount,
 .contacts {
-  min-height: var(--initial-vh);
+  height: var(--initial-vh);
   width: 100%;
   box-sizing: border-box;
   padding: 52px 0 90px 0px;
@@ -163,6 +216,13 @@ a {
   flex-direction: column;
   align-items: stretch;
   justify-content: space-between;
+  @media (min-width: 1024px) {
+    align-items: normal;
+    height: calc(100vh - 100px);
+    width: 75vw;
+    padding: 100px 0 0 25vw;
+  }
+
 }
 
 .greeting {
@@ -177,12 +237,27 @@ a {
     ),
     url("./assets/images/hand.jpg");
   background-position: top right;
+  @media (min-width: 1024px) {
+    padding: 0 0 100px 25vw;
+    background-image: none;
+  }
 }
 
-.greeting__logo {
+.greeting__logo_mobile {
+  display: block;
   width: 50%;
-  object-position: center;
+  /* object-position: center; */
+  @media (min-width: 1024px) {
+    display: none;
+  }
 }
+
+@media (min-width: 1024px) {
+  .greeting p {
+    display: none;
+  }
+}
+
 
 .about {
   background-image: 
@@ -195,12 +270,17 @@ a {
     ),
     url("./assets/images/lamp.jpg");
   background-position: top right;
+  @media (min-width: 1024px) {
+    .main-point {
+      text-align: left;
+    }
+  }
 }
 
 .about__description {
   text-align: center;
   color: white;
-  font-size: 4.5vw;
+  font-size: 2vw;
 }
 
 .events {
@@ -214,11 +294,18 @@ a {
     ),
     url("./assets/images/piano.jpg");
   background-position: bottom center;
+  @media (min-width: 1024px) {
+    background-image: none;
+    text-align: center;
+  }
 }
 
 .events_filmstrip_wrap {
   height: calc(var(--initial-vh-unit) * 24);
   overflow: hidden;
+  @media (min-width: 1024px) {
+    display: none;
+  }
 }
 
 .events_filmstrip {
@@ -238,6 +325,11 @@ a {
     ),
     url("./assets/images/fork.jpg");
   background-position: bottom right;
+  @media (min-width: 1024px) {
+    text-align: center;
+    background-image: none;
+    justify-content: space-around;
+  }
 }
 
 .menu__additional-positions {
@@ -245,6 +337,20 @@ a {
   padding: 5px 20px;
   font-size: 4vw;
   color: white;
+  @media (min-width: 1024px) {
+    margin: 1vh;
+    width: auto;
+    font-size: 2vh;
+  }
+}
+
+.menu__icon {
+  display: none;
+  @media (min-width: 1024px) {
+    display: block;
+    height: 7vh;
+    margin: 2vh;
+  }
 }
 
 .menu__modal__open {
@@ -300,10 +406,13 @@ a {
   object-fit: cover;
   position: absolute;
   z-index: 0;
+  @media (min-width: 1024px) {
+    display: none;
+  }
 }
 
 .bar-menu__content {
-  min-height: var(--initial-vh);
+  height: var(--initial-vh);
   width: 100%;
   box-sizing: border-box;
   padding: 52px 0 80px 0px;
@@ -313,6 +422,24 @@ a {
   display: flex;
   align-items: stretch;
   position: relative;
+  @media (min-width: 1024px) {
+    box-sizing: border-box;
+    justify-content: space-around;
+    align-items: normal;
+    height: calc(100vh - 100px);
+    width: 75vw;
+    padding: 100px 0 0 25vw;
+    text-align: center;
+  }
+}
+
+.bar-menu__icon {
+  display: none;
+  @media (min-width: 1024px) {
+    display: block;
+    height: 7vh;
+    margin: 2vh;
+  }
 }
 
 .bar-menu__modal__open {
@@ -353,16 +480,12 @@ a {
   background: black;
 }
 
-.modal__content {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-
-
 .banquet {
   background-image: url("./assets/images/gl1.jpg");
   background-position: top center;
+  @media (min-width: 1024px) {
+    background-image: none;
+  }
 }
 
 .banquet__main-point-1 {
@@ -370,6 +493,9 @@ a {
   margin: 10px 20px;
   color: white;
   font-size: 6vw;
+  @media (min-width: 1024px) {
+    font-size: 5vh;
+  }
 }
 
 .banquet__main-point-2 {
@@ -380,12 +506,20 @@ a {
     0 0 12px red;
   font-size: 8vw;
   text-align: right;
+  @media (min-width: 1024px) {
+    font-size: 6vh;
+  }
+
 }
 
 .banquet__description {
   padding: 22px 20px;
   color: white;
   font-size: 4.5vw;
+  @media (min-width: 1024px) {
+    font-size: 3vh;
+  }
+
 }
 
 .banquet__contact {
@@ -393,6 +527,9 @@ a {
   color: white;
   font-size: 4vw;
   text-align: center;
+  @media (min-width: 1024px) {
+    font-size: 3vh;
+  }
 }
 
 .banquet__contact__button {
@@ -410,6 +547,10 @@ a {
   display: flex;
   flex-direction: column;
   align-items: stretch;
+  @media (min-width: 1024px) {
+    padding: 1vh 2vh;
+    font-size: 2vh;
+  }
 }
 
 .discount {
@@ -420,12 +561,20 @@ a {
   margin: 20px;
   color: white;
   font-size: 4vw;
+  @media (min-width: 1024px) {
+    font-size: 2vh;
+  }
 }
 
 .discount__icon {
   margin: 10px;
   height: 32px;
   width: 32px;
+  @media (min-width: 1024px) {
+    height: 6vh;
+    width: 6vh;
+    display: block;
+  }
 }
 
 .discount__item__description {
@@ -441,7 +590,11 @@ a {
 .contacts__item {
   margin: 20px;
   padding: 0 10%;
-  font-size: 4.5vw;
+  font-size: 4vh;
+  @media (min-width: 1024px) {
+    padding: 0 8%;
+    font-size: 2.5vh;
+  }
 }
 
 .contacts__item_link {
@@ -452,6 +605,10 @@ a {
   margin: calc(var(--initial-vh-unit) * 7) 20px;
   color: white;
   font-size: 6vw;
+  @media (min-width: 1024px) {
+    margin: 1vh;
+    font-size: 4vh;
+  }
 }
 
 .button_black {
@@ -466,6 +623,9 @@ a {
   border-style: solid none;
   border-width: 1px;
   border-color: #ffe791;
+  @media (min-width: 1024px) {
+    border-style: solid;
+  }
 }
 
 .wrapper_row {
@@ -494,6 +654,9 @@ a {
   border-style: solid none none none;
   border-width: 1px;
   border-color: #636363;
+  @media (min-width: 1024px) {
+    width: 50%;
+  }
 }
 
 .modal__content {

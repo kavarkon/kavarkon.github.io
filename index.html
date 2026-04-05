@@ -12,6 +12,9 @@
         src="/strelka.svg" data-default="/strelka.svg" 
         data-active="./x.svg" 
         alt="address button">
+      <img class="greeting__logo_desktop" 
+        src="./src/assets/icons/main-logo-desktop.svg" 
+        alt="logo TEMPLE BAR">
       <img class="navigation-button js-toggle js-navigation-button" 
         src="/kvadratik.svg" 
         data-default="/kvadratik.svg" 
@@ -40,7 +43,7 @@
     <div class="content">
       <div class="greeting">
         <div class="wrapper_row-center">
-          <img class="greeting__logo" 
+          <img class="greeting__logo_mobile" 
             src="./src/assets/icons/main-logo-min.svg" 
             alt="logo TEMPLE BAR">
         </div>
@@ -72,10 +75,13 @@
       </div>
       <div class="spacer"></div>
       <div class="menu" id="menu">
-        <div>
-          <p class="main-point">СОЧНЫЕ СТЕЙКИ ЗЕРНОВОГО ОТКОРМА</p>
-          <p class="menu__additional-positions">ЕСТЬ ДЕТСКОЕ МЕНЮ</p>
-          <p class="menu__additional-positions">И БИЗНЕС-ЛАНЧИ<br>с понедельника по пятницу<br>с 12:00 до 16:00</p>
+        <div class="wrapper_column-center">
+          <img class="menu__icon" src="./src/assets/icons/steak.svg" alt="">
+          <div>
+            <p class="main-point">СОЧНЫЕ СТЕЙКИ ЗЕРНОВОГО ОТКОРМА</p>
+            <p class="menu__additional-positions">ЕСТЬ ДЕТСКОЕ МЕНЮ</p>
+            <p class="menu__additional-positions">И БИЗНЕС-ЛАНЧИ<br>с понедельника по пятницу с 12:00 до 16:00</p>
+          </div>
         </div>
         <a class="button_black menu__modal__open">
           МЕНЮ КУХНИ
@@ -115,7 +121,10 @@
           playsinline>
         </video>
         <div class="bar-menu__content">
-        <p class="main-point">ГОЛОВОКРУЖИТЕЛЬНЫЙ ВЫБОР ПЕННОГО</p>
+        <div class="wrapper_column-center">
+          <img class="bar-menu__icon" src="./src/assets/icons/beer.svg" alt="">
+          <p class="main-point">ГОЛОВОКРУЖИТЕЛЬНЫЙ ВЫБОР ПЕННОГО</p>
+        </div>
         <a class="button_black bar-menu__modal__open">
             МЕНЮ БАРА
         </a>
@@ -218,6 +227,7 @@
           Telegram
         </a>
       </div>
+      <div class="spacer"></div>
       <div class="x">
         *Instagram является официальным продуктом компании Meta Platforms Inc., признанной экстремистской организацией на территории РФ
       </div>
