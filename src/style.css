@@ -594,11 +594,14 @@ a {
 .discount__icon {
   margin: 10px;
   height: 32px;
-  width: 32px;
+  /* width: 32px; */
+  object-fit: contain;
   @media (min-width: 1024px) {
     height: 6vh;
-    width: 6vh;
+    /* width: 6vh; */
     display: block;
+    object-fit: contain;
+
   }
 }
 
