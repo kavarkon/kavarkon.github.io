@@ -154,7 +154,7 @@ a {
 }
 
 .footer {
-  bottom: 0;
+  bottom: 15px;
   left: 0;
   position: fixed;
   z-index: 100;
@@ -211,7 +211,7 @@ a {
   height: var(--initial-vh);
   width: 100%;
   box-sizing: border-box;
-  padding: 52px 0 90px 0px;
+  padding: 52px 0 105px 0px;
   background-color: black;
   background-size: contain;
   background-repeat: no-repeat;
@@ -230,7 +230,7 @@ a {
 }
 
 .greeting {
-  padding: 20px 20px 80px 20px;
+  padding: 20px 20px 95px 20px;
   background-image: 
     linear-gradient(
       to bottom,
@@ -244,7 +244,7 @@ a {
   @media (min-width: 1024px) {
     height: 100vh;
     /* padding: 0 0 100px 25vw; */
-    padding: 0 100px;
+    padding: 0 115px;
     background-image: none;
   }
 }
@@ -552,7 +552,7 @@ a {
 }
 
 .banquet__contact__button {
-  width: 100%;
+  width: 30vw;
   margin: 5px;
   padding: 2vw 3vw;
   box-sizing: border-box;
@@ -678,7 +678,7 @@ a {
 }
 
 .wrapper_column-center {
-  padding: 20px;
+  /* padding: 20px; */
   display: flex;
   flex-direction: column;
   align-items: center;
