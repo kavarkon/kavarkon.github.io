@@ -97,7 +97,8 @@ a {
   top: 0;
   height: var(--initial-vh);
   width: 100%;
-  padding: 20% 0;
+  /* padding: 20% 0; */
+  padding: 52px 0 105px 0px;
   box-sizing: border-box;
   position: fixed;
   z-index: 50;
