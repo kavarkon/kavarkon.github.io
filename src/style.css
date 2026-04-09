@@ -54,7 +54,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  @media (min-width: 1024px) {
+  @media (min-width: 768px) {
     justify-content: center;
     position: static;
   }
@@ -62,7 +62,7 @@ a {
 
 .greeting__logo_desktop {
   display: none;
-  @media (min-width: 1024px) {
+  @media (min-width: 768px) {
     width: 20vw;
     display: block;
   }
@@ -75,7 +75,7 @@ a {
   background: transparent;
   cursor: pointer;
   display: block;
-  @media (min-width: 1024px) {
+  @media (min-width: 768px) {
     display: none;
   }
 }
@@ -85,7 +85,7 @@ a {
   display: none;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .address-panel,
   .navigation-menu {
     display: none !important;
@@ -178,7 +178,7 @@ a {
   font-family: "Montserrat", Arial, sans-serif;
   cursor: pointer;
   display: block;
-  @media (min-width: 1024px) {
+  @media (min-width: 768px) {
     padding: 15px  25px;
     font-size: 14px;
   }
@@ -197,7 +197,7 @@ a {
 }
 
 .spacer {
-  min-height: calc(var(--initial-vh-unit) * 15);
+  height: calc(var(--initial-vh-unit) * 20);
   background: black;
 }
 
@@ -220,14 +220,13 @@ a {
   flex-direction: column;
   align-items: stretch;
   justify-content: space-between;
-  @media (min-width: 1024px) {
+  @media (min-width: 768px) {
     align-items: center;
     height: auto;
     /* height: calc(100vh - 100px); */
     /* width: 75vw; */
     padding: 0;
   }
-
 }
 
 .greeting {
@@ -242,7 +241,7 @@ a {
     ),
     url("./assets/images/hand.jpg");
   background-position: top right;
-  @media (min-width: 1024px) {
+  @media (min-width: 768px) {
     height: 100vh;
     /* padding: 0 0 100px 25vw; */
     padding: 0 115px;
@@ -254,12 +253,12 @@ a {
   display: block;
   width: 50%;
   /* object-position: center; */
-  @media (min-width: 1024px) {
+  @media (min-width: 768px) {
     display: none;
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .greeting p {
     display: none;
   }
@@ -277,7 +276,7 @@ a {
     ),
     url("./assets/images/lamp.jpg");
   background-position: top right;
-  @media (min-width: 1024px) {
+  @media (min-width: 768px) {
     display: none;
     /* .main-point { */
     /*   text-align: left; */
@@ -302,7 +301,7 @@ a {
     ),
     url("./assets/images/piano.jpg");
   background-position: bottom center;
-  @media (min-width: 1024px) {
+  @media (min-width: 768px) {
     display: none;
     /* background-image: none; */
     /* text-align: center; */
@@ -310,7 +309,7 @@ a {
 }
 
 .events_filmstrip_wrap {
-  height: calc(var(--initial-vh-unit) * 24);
+  height: calc(var(--initial-vh-unit) * 25);
   overflow: hidden;
   /* @media (min-width: 1024px) { */
   /*   display: none; */
@@ -334,7 +333,7 @@ a {
     ),
     url("./assets/images/fork.jpg");
   background-position: bottom right;
-  @media (min-width: 1024px) {
+  @media (min-width: 768px) {
     height: auto;
     text-align: center;
     background-image: none;
@@ -350,7 +349,7 @@ a {
   padding: 5px 20px;
   font-size: 4vw;
   color: white;
-  @media (min-width: 1024px) {
+  @media (min-width: 768px) {
     display: none;
     /* margin: 1vh; */
     /* width: auto; */
@@ -360,7 +359,7 @@ a {
 
 .menu__icon {
   display: none;
-  @media (min-width: 1024px) {
+  @media (min-width: 768px) {
     display: block;
     height: 7vh;
     margin: 2vh;
@@ -420,7 +419,7 @@ a {
   object-fit: cover;
   position: absolute;
   z-index: 0;
-  @media (min-width: 1024px) {
+  @media (min-width: 768px) {
     display: none;
   }
 }
@@ -436,7 +435,7 @@ a {
   display: flex;
   align-items: stretch;
   position: relative;
-  @media (min-width: 1024px) {
+  @media (min-width: 768px) {
     box-sizing: border-box;
     justify-content: space-around;
     align-items: center;
@@ -452,7 +451,7 @@ a {
 
 .bar-menu__icon {
   display: none;
-  @media (min-width: 1024px) {
+  @media (min-width: 768px) {
     display: block;
     height: 7vh;
     margin: 2vh;
@@ -500,7 +499,7 @@ a {
 .banquet {
   background-image: url("./assets/images/gl1.jpg");
   background-position: top center;
-  @media (min-width: 1024px) {
+  @media (min-width: 768px) {
     background-image: none;
   }
 }
@@ -510,7 +509,7 @@ a {
   margin: 10px 20px;
   color: white;
   font-size: 6vw;
-  @media (min-width: 1024px) {
+  @media (min-width: 768px) {
     display: none;
     /* font-size: 5vh; */
   }
@@ -524,7 +523,7 @@ a {
     0 0 12px red;
   font-size: 8vw;
   text-align: right;
-  @media (min-width: 1024px) {
+  @media (min-width: 768px) {
     display: none;
     /* font-size: 6vh; */
   }
@@ -535,7 +534,7 @@ a {
   padding: 22px 20px;
   color: white;
   font-size: 4.5vw;
-  @media (min-width: 1024px) {
+  @media (min-width: 768px) {
     display: none;
     /* font-size: 3vh; */
   }
@@ -547,7 +546,7 @@ a {
   color: white;
   font-size: 4vw;
   text-align: center;
-  @media (min-width: 1024px) {
+  @media (min-width: 768px) {
     font-size: 3vh;
   }
 }
@@ -568,7 +567,7 @@ a {
   display: inline;
   /* flex-direction: column; */
   /* align-items: stretch; */
-  @media (min-width: 1024px) {
+  @media (min-width: 768px) {
     width: 20vw;
     padding: 1vh 2vh;
     font-size: 2vh;
@@ -578,7 +577,7 @@ a {
 
 .discount {
   text-align: center;
-  @media (min-width: 1024px) {
+  @media (min-width: 768px) {
     height: 75vh;
   }
 }
@@ -587,7 +586,7 @@ a {
   margin: calc(var(--initial-vh-unit) * 1);
   color: white;
   font-size: 4vw;
-  @media (min-width: 1024px) {
+  @media (min-width: 768px) {
     font-size: 2vh;
   }
 }
@@ -597,7 +596,7 @@ a {
   height: 32px;
   /* width: 32px; */
   object-fit: contain;
-  @media (min-width: 1024px) {
+  @media (min-width: 768px) {
     height: 6vh;
     /* width: 6vh; */
     display: block;
@@ -612,7 +611,7 @@ a {
 }
 
 .discount__line {
-  @media (min-width: 1024px) {
+  @media (min-width: 768px) {
     width: 80%;
   }
 }
@@ -620,7 +619,7 @@ a {
 .contacts {
   color: white;
   text-align: center;
-  @media (min-width: 1024px) {
+  @media (min-width: 768px) {
     height: 75vh;
   }
 }
@@ -629,7 +628,7 @@ a {
   margin: 20px;
   padding: 0 10%;
   font-size: 4vw;
-  @media (min-width: 1024px) {
+  @media (min-width: 768px) {
     padding: 0 8%;
     font-size: 2.5vh;
   }
@@ -643,7 +642,7 @@ a {
   margin: calc(var(--initial-vh-unit) * 7) 20px;
   color: white;
   font-size: 6vw;
-  @media (min-width: 1024px) {
+  @media (min-width: 768px) {
     margin: 1vh;
     font-size: 4vh;
   }
@@ -661,7 +660,7 @@ a {
   border-style: solid none;
   border-width: 1px;
   border-color: #ffe791;
-  @media (min-width: 1024px) {
+  @media (min-width: 768px) {
     width: 40vw;
     border-style: solid;
   }
