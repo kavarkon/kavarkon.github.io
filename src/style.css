@@ -273,7 +273,7 @@ a {
 }
 
 .events_filmstrip_wrap {
-  height: calc(var(--initial-vh-unit) * 25);
+  height: calc(var(--initial-vh-unit) * 26);
   overflow: hidden;
 }
 
