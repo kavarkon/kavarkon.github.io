@@ -169,9 +169,25 @@ a {
   font-family: 'Montserrat', Arial, sans-serif;
 }
 
-.spacer {
+.spacer-greeting,
+.spacer-about,
+.spacer-events,
+.spacer-menu,
+.spacer-bar-menu,
+.spacer-banquet,
+.spacer-discount,
+.spacer-contacts {
   height: calc(var(--initial-vh-unit) * 20);
   background: black;
+}
+
+
+@media (min-width: 768px) {
+  .spacer-about,
+  .spacer-events,
+  .spacer-menu {
+    display: none;
+  }
 }
 
 .greeting,
@@ -213,9 +229,12 @@ a {
     url("./assets/images/hand.jpg");
   background-position: top right;
   @media (min-width: 768px) {
-    height: 100vh;
+    height: 70vh;
+    margin-bottom: 20vh;
     padding: 0 115px;
-    background-image: none;
+    background-image: url("./assets/images/templebar-zdanie.jpg");
+    background-size: auto 100%;
+    background-position: center;
   }
 }
 
@@ -695,4 +714,3 @@ a {
     scroll-snap-align: start;
   }
 }
-
