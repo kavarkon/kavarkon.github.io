@@ -29,7 +29,7 @@ body {
 
 .body--locked {
   overflow: hidden;
-  height: var(--initial-vh);
+  height: 100dvh;
 }
 
 p {
@@ -354,7 +354,7 @@ a {
   position: fixed;
   inset: 0;
   width: 100%;
-  height: var(--initial-vh);
+  height: 100dvh;
   overflow-y: auto;
   overflow-x: hidden;
   background: black;
@@ -456,7 +456,7 @@ a {
   position: fixed;
   inset: 0;
   width: 100%;
-  height: var(--initial-vh);
+  height: 100dvh;
   overflow-y: auto;
   overflow-x: hidden;
   background: black;
