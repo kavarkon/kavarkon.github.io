@@ -55,6 +55,7 @@ a {
   align-items: center;
   justify-content: space-between;
   @media (min-width: 768px) {
+    padding-top: 50px;
     justify-content: center;
     position: static;
   }
