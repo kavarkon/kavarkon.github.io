@@ -185,7 +185,7 @@ a {
 
 @media (min-width: 768px) {
   .spacer-about,
-  .spacer-events,
+  /* .spacer-events, */
   .spacer-menu {
     display: none;
   }
@@ -276,7 +276,43 @@ a {
   font-size: 4.5vw;
 }
 
+/* .events { */
+/*   background-image:  */
+/*     linear-gradient( */
+/*       to bottom, */
+/*       rgba(0,0,0,1), */
+/*       transparent 20%, */
+/*       transparent 80%, */
+/*       rgba(0,0,0,1) */
+/*     ), */
+/*     url("./assets/images/piano.jpg"); */
+/*   background-position: bottom center; */
+/*   @media (min-width: 768px) { */
+/*     background: none; */
+/*   } */
+/* } */
 .events {
+  padding: 0;
+}
+
+.events__background {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  z-index: 0;
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+.events__content {
+  height: var(--initial-vh);
+  width: 100%;
+  box-sizing: border-box;
+  padding: 52px 0 80px 0px;
+  flex-direction: column;
+  justify-content: space-between;
   background-image: 
     linear-gradient(
       to bottom,
@@ -284,16 +320,27 @@ a {
       transparent 20%,
       transparent 80%,
       rgba(0,0,0,1)
-    ),
-    url("./assets/images/piano.jpg");
-  background-position: bottom center;
+    );
+  display: flex;
+  align-items: stretch;
+  position: relative;
   @media (min-width: 768px) {
-    display: none;
+    box-sizing: border-box;
+    justify-content: space-around;
+    align-items: center;
+    height: auto;
+    padding: 0;
+    text-align: center;
+    .main-point {
+      display: none;
+    }
   }
 }
 
+
 .events_filmstrip_wrap {
   height: calc(var(--initial-vh-unit) * 26);
+  margin-bottom: 10px;
   overflow: hidden;
 }
 
