@@ -296,7 +296,8 @@ a {
 }
 
 .events__background {
-  height: 100%;
+  height: var(--initial-vh);
+  /* height: 100%; */
   width: 100%;
   object-fit: cover;
   position: absolute;
