@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "title": "Концерт",
+    "date": "2026-05-01",
+    "time": "20:00",
+    "entry": "билеты по ссылке https://afisha.yandex.ru/moscow/concert/...",
+    "description": "Живая музыка",
+    "image": "/posters/event1.jpg"
+  },
+  {
+    "id": 2,
+    "title": "DJ сет",
+    "date": "2026-05-02",
+    "time": "19:00",
+    "entry": "free",
+    "description": "Ночной сет",
+    "image": "/posters/event2.jpg"
+  }
+]

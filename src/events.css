@@ -34,13 +34,13 @@ a {
   z-index: 100;
   width: 100%;
   box-sizing: border-box;
-  padding: 20px;
+  /* padding: 20px; */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   color: #d4c798;
-  font-size: 5vw;
+  font-size: 20px;
   font-weight: 700;
   font-family: 'Montserrat', Arial, sans-serif;
   background-image: 
@@ -53,14 +53,24 @@ a {
 
 .header__cancel-button,
 .header__display-button {
-  height: 32px;
-  width: 32px;
+  height: 24px;
+  width: 24px;
+  margin: 20px;
 }
 
-.header__cancel-butturlon {
-  background-image: url("./assets/icons/tile.svg");
+.event-single-page .header__title,
+.event-single-page .header__display-button {
+  display: none;
+}
+
+.header__cancel-button {
+  display: block;
+  flex-shrink: 0;
+
+  background-image: url("./assets/icons/cancel.svg");
   background-size: contain;
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .content {
@@ -68,4 +78,8 @@ a {
   width: 100vw;
   font-family: 'Montserrat', Arial, sans-serif;
   background-color: gray;
+}
+
+.event__image {
+  width: 60vw;
 }
