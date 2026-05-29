@@ -52,6 +52,21 @@ function getEventIdFromUrl() {
   return params.get('id');
 }
 
+function formatEventDate(dateString, timeString) {
+  const date = new Date(dateString);
+
+  const weekday = date.toLocaleDateString('ru-RU', {
+    weekday: 'long'
+  });
+
+  const dayMonth = date.toLocaleDateString('ru-RU', {
+    day: 'numeric',
+    month: 'long'
+  });
+
+  return `${weekday} [${dayMonth}]\n${timeString}`;
+}
+
 function renderEventsList(events) {
   const track = document.querySelector('.events-slider__track');
 
@@ -63,6 +78,12 @@ function renderEventsList(events) {
     const card = document.createElement('a');
 
     card.className = 'event-card';
+
+    card.dataset.title = event.title;
+    card.dataset.displayDate = formatEventDate(
+      event.date,
+      event.time
+    );
 
     if (index === 0) {
       card.classList.add('active');
@@ -76,14 +97,6 @@ function renderEventsList(events) {
         src="${event.image}"
         alt="${event.title}"
       >
-
-      <div class="event-card__info">
-        <p class="event-card__title">${event.title}</p>
-
-        <p class="event-card__date">
-          ${event.date} ${event.time}
-        </p>
-      </div>
     `;
 
     track.appendChild(card);
@@ -96,6 +109,10 @@ function setupSlider() {
   const slider = document.querySelector('.events-slider');
 
   const cards = document.querySelectorAll('.event-card');
+
+  const title = document.querySelector('.event-details__title');
+
+  const date = document.querySelector('.event-details__date');
 
   if (!slider || !cards.length) return;
 
@@ -122,6 +139,9 @@ function setupSlider() {
 
     if (closestCard) {
       closestCard.classList.add('active');
+
+      title.textContent = closestCard.dataset.title;
+      date.innerHTML = closestCard.dataset.displayDate.replace('\n', '<br>');
     }
   }
 

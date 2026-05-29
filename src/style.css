@@ -42,14 +42,13 @@ a {
 }
 
 .header {
-  top: 0;
+  top: env(safe-area-inset-top);
   left: 0;
   position: fixed;
   z-index: 100;
   width: 100%;
   box-sizing: border-box;
   padding: 20px;
-  padding-top: calc(env(safe-area-inset-top) + 20px);
   background: transparent;
   display: flex;
   align-items: center;
