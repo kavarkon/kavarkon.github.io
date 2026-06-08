@@ -67,7 +67,7 @@ a {
   display: block;
   flex-shrink: 0;
 
-  background-image: url("./assets/icons/cancel.svg");
+  background-image: url("/cancel.svg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
