@@ -8,18 +8,25 @@
 	</head>
 	<body>
 		<div class="header">
-			<a class="header__cancel-button"></a>
+			<a
+				class="header__cancel-button"
+				aria-label="Назад"
+			></a>
 			<p class="header__title">TEMPLE BAR | АФИША</p>
-			<img class="header__display-button" src="./src/assets/icons/tile.svg" data-default="./src/assets/icons/tile.svg" data-active="./src/assets/icons/carousel.svg" alt="display button">
+			<button
+				type="button"
+				class="header__display-button"
+				aria-label="Показать плитку"
+			>
+				<img
+					class="header__display-icon"
+					src="./src/assets/icons/tile.svg"
+					alt=""
+				>
+			</button>
 		</div>
 		<div class="content">
-			<div class="events-slider">
-				<div class="events-slider__track"></div>
-			</div>
-			<div class="event-details">
-				<p class="event-details__title"></p>
-				<p class="event-details__date"></p>
-			</div>
+			<div class="events-view"></div>
 		</div>
 		<script type="module" src="./src/events/events.js"></script>
 	</body>

@@ -1,14 +1,29 @@
-function formatEventDate(dateString, timeString) {
-  const date = new Date(dateString);
+export function formatEventDate(scheduledAt) {
+  const date = new Date(scheduledAt);
 
-  const weekday = date.toLocaleDateString('ru-RU', {
-    weekday: 'long'
-  });
+  if (Number.isNaN(date.getTime())) {
+    throw new Error('Некорректная дата мероприятия');
+  }
 
-  const dayMonth = date.toLocaleDateString('ru-RU', {
+  const weekday = new Intl.DateTimeFormat('ru-RU', {
+    weekday: 'long',
+    timeZone: 'Europe/Moscow',
+  }).format(date);
+
+  const dayMonth = new Intl.DateTimeFormat('ru-RU', {
     day: 'numeric',
-    month: 'long'
-  });
+    month: 'long',
+    timeZone: 'Europe/Moscow',
+  }).format(date);
 
-  return `${weekday} [${dayMonth}]\n${timeString}`;
+  const time = new Intl.DateTimeFormat('ru-RU', {
+    hour: '2-digit',
+    minute: '2-digit',
+    timeZone: 'Europe/Moscow',
+  }).format(date);
+
+  return {
+    date: `${weekday} [${dayMonth}]`,
+    time,
+  };
 }

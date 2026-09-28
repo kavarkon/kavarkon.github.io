@@ -55,7 +55,19 @@ a {
 .header__display-button {
   height: 24px;
   width: 24px;
-  /* margin: 12px; */
+}
+
+.header__display-button {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.header__display-icon {
+  height: 100%;
+  width: 100%;
+  display: block;
 }
 
 .event-single-page .header__title,
@@ -86,6 +98,37 @@ a {
   background-color: gray;
   overflow: hidden;
   background-color: black;
+}
+
+.events-view {
+  min-height: 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.event-single {
+  min-height: 0;
+  overflow-y: auto;
+  color: white;
+  text-align: center;
+}
+
+.event-single__image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.event-single__title {
+  color: #ffe791;
+  font-size: 5.3vw;
+  font-weight: 700;
+}
+
+.event-single__description {
+  font-size: 4.5vw;
 }
 
 .events-slider {
@@ -197,5 +240,41 @@ a {
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+.events-grid {
+  min-height: 0;
+  height: 100%;
+  overflow-y: auto;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  align-content: start;
+}
+
+.event-grid-card {
+  color: white;
+}
+
+.event-grid-card__image {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  display: block;
+}
+
+.event-grid-card__title {
+  margin-top: 8px;
+  font-size: 4vw;
+}
+
+@media (min-width: 768px) {
+  .events-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .event-grid-card__title {
+    font-size: 2vw;
   }
 }

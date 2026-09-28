@@ -1,24 +1,18 @@
+import tileIcon from '../assets/icons/tile.svg';
+import carouselIcon from '../assets/icons/carousel.svg';
 import { loadEvents } from './events-api.js';
-import { formatEventDate } from './events-utils.js';
+import { renderSlider } from './events-slider.js';
+import { renderGrid } from './events-grid.js';
+import { renderEventPage } from './event-page.js';
+
+const state = {
+  events: [],
+  view: 'slider',
+};
 
 document.addEventListener('DOMContentLoaded', async () => {
-  function setInitialViewportHeight() {
-    const h = window.innerHeight;
-
-    document.documentElement.style.setProperty('--initial-vh', `${h}px`);
-
-    document.documentElement.style.setProperty(
-      '--initial-vh-unit',
-      `${h * 0.01}px`
-    );
-  }
-
-  setInitialViewportHeight();
-
-  const container = document.querySelector('.content');
-
-  const events = await loadEvents();
-
+  const container = document.querySelector('.events-view');
+  const displayButton = document.querySelector('.header__display-button');
   const eventId = getEventIdFromUrl();
 
   setupBackButton(eventId);
@@ -27,21 +21,30 @@ document.addEventListener('DOMContentLoaded', async () => {
     document.body.classList.add('event-single-page');
   }
 
+  if (!container) return;
+
+  try {
+    state.events = await loadEvents();
+  } catch (error) {
+    container.textContent = 'Не удалось загрузить мероприятия';
+    return;
+  }
+
   if (eventId) {
-    const event = events.find(e => e.id == eventId);
+    const event = state.events.find(event => event.id == eventId);
 
     if (!event) {
       container.textContent = 'Событие не найдено';
       return;
     }
 
-    renderSingleEvent(container, event);
-  } else {
-    renderEventsList(events);
+    renderEventPage(container, event);
+    return;
   }
+
+  renderCurrentView(container, displayButton);
+  setupDisplayButton(displayButton, container);
 });
-
-
 
 function getEventIdFromUrl() {
   const params = new URLSearchParams(window.location.search);
@@ -49,25 +52,39 @@ function getEventIdFromUrl() {
   return params.get('id');
 }
 
+function renderCurrentView(container, displayButton) {
+  if (state.view === 'slider') {
+    renderSlider(container, state.events);
+  } else {
+    renderGrid(container, state.events);
+  }
 
+  updateDisplayButton(displayButton);
+}
 
+function setupDisplayButton(button, container) {
+  if (!button) return;
 
+  button.addEventListener('click', () => {
+    state.view = state.view === 'slider' ? 'grid' : 'slider';
 
-function renderSingleEvent(container, event) {
-  container.innerHTML = `
-    <div class="event-single">
-      <img
-        src="${event.image}"
-        alt="${event.title}"
-      >
+    renderCurrentView(container, button);
+  });
+}
 
-      <h1>${event.title}</h1>
+function updateDisplayButton(button) {
+  if (!button) return;
 
-      <p>${event.date} ${event.time}</p>
+  const icon = button.querySelector('.header__display-icon');
 
-      <p>${event.description}</p>
-    </div>
-  `;
+  if (!icon) return;
+
+  const showingSlider = state.view === 'slider';
+
+  icon.src = showingSlider ? tileIcon : carouselIcon;
+  button.ariaLabel = showingSlider
+    ? 'Показать плитку'
+    : 'Показать карусель';
 }
 
 function setupBackButton(eventId) {
