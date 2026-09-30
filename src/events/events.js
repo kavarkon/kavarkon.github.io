@@ -1,100 +1,98 @@
-import tileIcon from '../assets/icons/tile.svg';
-import carouselIcon from '../assets/icons/carousel.svg';
-import { loadEvents } from './events-api.js';
-import { renderSlider } from './events-slider.js';
-import { renderGrid } from './events-grid.js';
-import { renderEventPage } from './event-page.js';
+import tileIcon from "../assets/icons/tile.svg"
+import carouselIcon from "../assets/icons/carousel.svg"
+import { loadEvents } from "./events-api.js"
+import { renderSlider } from "./events-slider.js"
+import { renderGrid } from "./events-grid.js"
+import { renderEventPage } from "./event-page.js"
 
 const state = {
   events: [],
-  view: 'slider',
-};
+  view: "slider",
+}
 
-document.addEventListener('DOMContentLoaded', async () => {
-  const container = document.querySelector('.events-view');
-  const displayButton = document.querySelector('.header__display-button');
-  const eventId = getEventIdFromUrl();
+document.addEventListener("DOMContentLoaded", async () => {
+  const container = document.querySelector(".events-view")
+  const displayButton = document.querySelector(".header__display-button")
+  const eventId = getEventIdFromUrl()
 
-  setupBackButton(eventId);
+  setupBackButton(eventId)
 
   if (eventId) {
-    document.body.classList.add('event-single-page');
+    document.body.classList.add("event-single-page")
   }
 
-  if (!container) return;
+  if (!container) return
 
   try {
-    state.events = await loadEvents();
+    state.events = await loadEvents()
   } catch (error) {
-    container.textContent = 'Не удалось загрузить мероприятия';
-    return;
+    container.textContent = "Не удалось загрузить мероприятия"
+    return
   }
 
   if (eventId) {
-    const event = state.events.find(event => event.id == eventId);
+    const event = state.events.find((event) => event.id == eventId)
 
     if (!event) {
-      container.textContent = 'Событие не найдено';
-      return;
+      container.textContent = "Событие не найдено"
+      return
     }
 
-    renderEventPage(container, event);
-    return;
+    renderEventPage(container, event)
+    return
   }
 
-  renderCurrentView(container, displayButton);
-  setupDisplayButton(displayButton, container);
-});
+  renderCurrentView(container, displayButton)
+  setupDisplayButton(displayButton, container)
+})
 
 function getEventIdFromUrl() {
-  const params = new URLSearchParams(window.location.search);
+  const params = new URLSearchParams(window.location.search)
 
-  return params.get('id');
+  return params.get("id")
 }
 
 function renderCurrentView(container, displayButton) {
-  if (state.view === 'slider') {
-    renderSlider(container, state.events);
+  if (state.view === "slider") {
+    renderSlider(container, state.events)
   } else {
-    renderGrid(container, state.events);
+    renderGrid(container, state.events)
   }
 
-  updateDisplayButton(displayButton);
+  updateDisplayButton(displayButton)
 }
 
 function setupDisplayButton(button, container) {
-  if (!button) return;
+  if (!button) return
 
-  button.addEventListener('click', () => {
-    state.view = state.view === 'slider' ? 'grid' : 'slider';
+  button.addEventListener("click", () => {
+    state.view = state.view === "slider" ? "grid" : "slider"
 
-    renderCurrentView(container, button);
-  });
+    renderCurrentView(container, button)
+  })
 }
 
 function updateDisplayButton(button) {
-  if (!button) return;
+  if (!button) return
 
-  const icon = button.querySelector('.header__display-icon');
+  const icon = button.querySelector(".header__display-icon")
 
-  if (!icon) return;
+  if (!icon) return
 
-  const showingSlider = state.view === 'slider';
+  const showingSlider = state.view === "slider"
 
-  icon.src = showingSlider ? tileIcon : carouselIcon;
-  button.ariaLabel = showingSlider
-    ? 'Показать плитку'
-    : 'Показать карусель';
+  icon.src = showingSlider ? tileIcon : carouselIcon
+  button.ariaLabel = showingSlider ? "Показать плитку" : "Показать карусель"
 }
 
 function setupBackButton(eventId) {
-  const backBtn = document.querySelector('.header__cancel-button');
+  const backBtn = document.querySelector(".header__cancel-button")
 
-  if (!backBtn) return;
+  if (!backBtn) return
 
   if (eventId) {
-    backBtn.href = '/events.html';
+    backBtn.href = "/events.html"
   } else {
-    backBtn.href = '/';
+    backBtn.href = "/"
   }
 }

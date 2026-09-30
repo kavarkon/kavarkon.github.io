@@ -1,15 +1,15 @@
 export function renderGrid(container, events) {
   container.innerHTML = `
     <div class="events-grid"></div>
-  `;
+  `
 
-  const grid = container.querySelector('.events-grid');
+  const grid = container.querySelector(".events-grid")
 
-  events.forEach(event => {
-    const card = document.createElement('a');
+  events.forEach((event) => {
+    const card = document.createElement("a")
 
-    card.className = 'event-grid-card';
-    card.href = `/events.html?id=${event.id}`;
+    card.className = "event-grid-card"
+    card.href = `/events.html?id=${event.id}`
 
     card.innerHTML = `
       <img
@@ -18,8 +18,8 @@ export function renderGrid(container, events) {
         alt="${event.title}"
       >
       <p class="event-grid-card__title">${event.title}</p>
-    `;
+    `
 
-    grid.appendChild(card);
-  });
+    grid.appendChild(card)
+  })
 }

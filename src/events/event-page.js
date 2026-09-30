@@ -1,7 +1,7 @@
-import { formatEventDate } from './events-utils.js';
+import { formatEventDate } from "./events-utils.js"
 
 export function renderEventPage(container, event) {
-  const displayDate = formatEventDate(event.scheduledAt);
+  const displayDate = formatEventDate(event.scheduledAt)
 
   container.innerHTML = `
     <div class="event-single">
@@ -19,5 +19,5 @@ export function renderEventPage(container, event) {
 
       <p class="event-single__description">${event.description}</p>
     </div>
-  `;
+  `
 }
